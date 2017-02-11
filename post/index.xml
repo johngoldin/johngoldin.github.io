@@ -6,130 +6,82 @@
     <description>Recent content in Posts on Can I Blog Too</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>A sample</title>
-      <link>/2017/02/10/a-sample/</link>
-      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+      <title>How I Setup This Site</title>
+      <link>/2017/02/11/how-i-setup-this-site/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/02/10/a-sample/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <guid>/2017/02/11/how-i-setup-this-site/</guid>
+      <description>
 
-/BLOGDOWN-BODY-BEFORE --&gt;
+&lt;p&gt;I attended the &lt;strong&gt;blogdown&lt;/strong&gt; session at the RStudio conference in Florida. I am enjoying the enthusiasm and energy around R and RStudio.
+It reminds me of the early days of personal computers at the end of the 70&amp;rsquo;s and the beginning of the 80&amp;rsquo;s. Perhaps I am experiencing a second
+childhood. Anyway, all the Cool Kids are doing web pages on GitHub so I want to do it too.&lt;/p&gt;
 
-&lt;p&gt;This is my first post created with the new_post() function.&lt;/p&gt;
+&lt;p&gt;I have done some simple blog posts with Blogger and WordPress. One of my goals is to create a portfolio of the my R projects.
+RMarkdown is the obvious way to go and WordPress doesn&amp;rsquo;t directly support
+that. So that&amp;rsquo;s a motivation to use &lt;strong&gt;blogdown&lt;/strong&gt;. But really a bit part of the
+motivation is that these days I am &amp;ldquo;all in&amp;rdquo; with the RStudio set of
+tools so it&amp;rsquo;s natural to put my faith in Yihui Xie and jump in. Because &lt;strong&gt;blogdown&lt;/strong&gt; is still developing,
+I know I am goint to suffer through rough edges. As a retiree, I am
+doing this for fun so the rough edges just add to the adventure.&lt;/p&gt;
 
+&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;
 
-&lt;!-- BLOGDOWN-HEAD
+&lt;p&gt;I had a little trouble to start because I didn&amp;rsquo;t understand the basics of
+what was going on with GitHub and web pages. Here I am focused on what GitHub refers to as a &amp;ldquo;user site&amp;rdquo; (as opposed to an organization site or a project site). See their &lt;a href=&#34;https://pages.github.com/&#34;&gt;general description of GitHub Pages&lt;/a&gt; and &lt;a href=&#34;https://help.github.com/articles/what-is-github-pages&#34;&gt;What is GitHub Pages?&lt;/a&gt;. The key
+fact is that if you have a repository called &lt;code&gt;username.github.io&lt;/code&gt; (with your
+GitHub username), whatever is in that repository will be served
+as a web site accessed as &lt;code&gt;https://username.github.io&lt;/code&gt;. What
+we are going to do here is describe how to use &lt;strong&gt;markdown&lt;/strong&gt;, RStudio,
+and GitHub to place the content of a static web site into
+your &lt;code&gt;username.github.io&lt;/code&gt; repository.&lt;/p&gt;
 
+&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
 
+&lt;p&gt;The site relies on &lt;strong&gt;blogdown&lt;/strong&gt; and GitHub. You have to have at least a beginner&amp;rsquo;s familiarity with GitHub, and believe me, I am merely a
+GitHub beginner. I got my start with GitHub mostly based on information
+from Jenny Bryan (see &lt;a href=&#34;http://happygitwithr.com/&#34;&gt;Happy Git and GitHub for the useR&lt;/a&gt;) and from &lt;a href=&#34;https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN&#34;&gt;RStudio&lt;/a&gt;. There&amp;rsquo;s also an &lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34;&gt;introduction&lt;/a&gt; on the GitHub site.&lt;/p&gt;
 
+&lt;p&gt;You need to be able to create a repository on GitHub and then
+clone that to a project in RStudio. See especially &lt;a href=&#34;http://happygitwithr.com/new-github-first.html&#34;&gt;section 16&lt;/a&gt; on Happy Git.&lt;/p&gt;
 
-/BLOGDOWN-HEAD --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Plain Markdown Post revised</title>
-      <link>/2016/12/30/a-plain-markdown-post-revised/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/2016/12/30/a-plain-markdown-post-revised/</guid>
-      <description>&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown (&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;
+&lt;p&gt;In general I try to operate in a way that allows me to rely on RStudio to do most of the work and to avoid doing git commands in the Terminal on OSX.
+That&amp;rsquo;s why I create a minimal repository first on GitHub and then create
+a new project in RStudio that clones the repository from GitHub. Rely on
+Jenny&amp;rsquo;s directions on how to do that.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-a-website&#34;&gt;Creating a website&lt;/h3&gt;
+
+&lt;p&gt;To get started with blogdown, I relied on a post by &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas&lt;/a&gt;,
+especially the comments on the post by Yihui Xie, the creator of
+&lt;strong&gt;blogdown&lt;/strong&gt;. Amber&amp;rsquo;s instructions involve more work with Git than I wanted
+to attempt. In particular, she uses multiple branches. Instead,
+I followed the suggestion and created two repositories.
+One was for the site itself (&lt;code&gt;johngoldin.github.io&lt;/code&gt;) and the other (which I called &lt;code&gt;pages-source&lt;/code&gt;) contains the &lt;strong&gt;blogdown&lt;/strong&gt; and &lt;strong&gt;Hugo&lt;/strong&gt; material
+that actually produces the site.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;
-&lt;li&gt;A plain Markdown post is rendered through &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34;&gt;Blackfriday&lt;/a&gt;, and an R Markdown document is compiled by &lt;a href=&#34;http://rmarkdown.rstudio.com&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://pandoc.org&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Create a repository for username.github.io on your github.&lt;/li&gt;
+&lt;li&gt;Clone that to a RStudio project with the same name.&lt;/li&gt;
+&lt;li&gt;Create a repository on your github, any name you desire, but here we will calle it &lt;code&gt;hugo-source&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Clone that second project to an RStudio project.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p&gt;
+&lt;p&gt;You are going to use &lt;strong&gt;blogdown&lt;/strong&gt; to create a &lt;strong&gt;Hugo&lt;/strong&gt; site in
+&lt;code&gt;hugo-source&lt;/code&gt;. And you are going to configure that site
+so that whenever it builds a website, it will place that
+website into the RStudio project username.github.io.
+When you push username.github.io to GitHub you will in effect
+publish your website.&lt;/p&gt;
 
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Write an R package.&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Write a book.&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; &amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Profit!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (&lt;a href=&#34;https://github.com/yihui/hugo-lithium-theme&#34;&gt;hugo-lithium-theme&lt;/a&gt;) but there is a caveat for plain Markdown posts: you have to include inline math expressions in  a pair of escaped parentheses &lt;code&gt;\&lt;/code&gt;&lt;code&gt;( \)&lt;/code&gt; instead of dollar signs &lt;code&gt;$ $&lt;/code&gt;, e.g. &lt;code&gt;\(S_n = \sum_{i=1}^n X_i\)&lt;/code&gt;. For R Markdown posts, you can use &lt;code&gt;$ $&lt;/code&gt; to write inline math expressions.&lt;/p&gt;
-
-&lt;p&gt;When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the &lt;code&gt;rmd&lt;/code&gt; argument of the function &lt;code&gt;blogdown::new_post()&lt;/code&gt;, e.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::new_post(&amp;quot;Post Title&amp;quot;, rmd = FALSE)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown revised</title>
-      <link>/2015/07/23/hello-r-markdown-revised/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015/07/23/hello-r-markdown-revised/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;Now with new and improved text.&lt;/p&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;#####content/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum revised</title>
-      <link>/2015/01/01/lorem-ipsum-revised/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/lorem-ipsum-revised/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;(Actually it doesn&amp;rsquo;t matter whether or not you maintain
+a GitHub repository for &lt;code&gt;hugo-source&lt;/code&gt;. It depends on whether
+you want to use version control for convenience or backup, just
+as would be true for any other RStudio project.)&lt;/p&gt;
 </description>
     </item>
     
