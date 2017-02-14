@@ -23,25 +23,25 @@
   </url>
   
   <url>
-    <loc>/categories/development/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/development/</loc>
     <lastmod>2017-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/golang/</loc>
+    <loc>/categories/development/</loc>
     <lastmod>2017-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/golang/</loc>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/golang/</loc>
     <lastmod>2017-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

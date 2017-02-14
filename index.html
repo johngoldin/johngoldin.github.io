@@ -1,257 +1,119 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
+	<meta name="generator" content="Hugo 0.18.1" />
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.18.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  
-  <title>Can I Blog Too</title>
-  
+  <title>Can I Blog Too &middot; </title>
 
   
   <link rel="stylesheet" href="./css/poole.css">
-  <link rel="stylesheet" href="./css/syntax.css">
   <link rel="stylesheet" href="./css/hyde.css">
+  <link rel="stylesheet" href="./css/poole-overrides.css">
+  <link rel="stylesheet" href="./css/hyde-overrides.css">
+  <link rel="stylesheet" href="./css/hyde-x.css">
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
 
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="./favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./touch-icon-144-precomposed.png">
+  <link href="./favicon.png" rel="icon">
 
   
-  <link href="./index.xml" rel="alternate" type="application/rss+xml" title="Can I Blog Too" />
+  
+  
+  <link href="./index.xml" rel="alternate" type="application/rss+xml" title="Can I Blog Too &middot; " />
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
 </head>
-
-<body class="theme-base-08 ">
-
+<body>
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="./"><h1>Can I Blog Too</h1></a>
-      <p class="lead">
-       Some of my personal projects with R 
-      </p>
+      
+      <h1></h1>
+      
     </div>
 
     <ul class="sidebar-nav">
-      <li><a href="./">Home</a> </li>
+      <li class="sidebar-nav-item"><a href="./">Blog</a></li>
       
-        <li><a href="./about/"> About </a></li>
+      <li class="sidebar-nav-item"><a href="./about/">About</a></li>
       
-        <li><a href="https://github.com/johngoldin"> GitHub </a></li>
+      <li class="sidebar-nav-item"><a href="https://github.com/johngoldin">GitHub</a></li>
       
-        <li><a href="./2017/02/11/how-i-set-up-this-site/"> How I Set Up This Site </a></li>
+      <li class="sidebar-nav-item"><a href="./2017/02/11/how-i-set-up-this-site/">How I Set Up This Site</a></li>
       
-        <li><a href="https://twitter.com/johngoldin"> Twitter </a></li>
+      <li class="sidebar-nav-item"><a href="https://twitter.com/johngoldin">Twitter</a></li>
       
     </ul>
 
-    <p>&copy; 2017. All rights reserved. </p>
-  </div>
-</div>
-
-
-    <div class="content container">
-<div class="posts">
-
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
       
-  <div class="post">
-    <h1 class="post-title">
-      <a href="./2017/02/11/how-i-set-up-this-site/">
-        How I Set Up This Site
-      </a>
-    </h1>
-
-    <span class="post-date">Sat, Feb 11, 2017</span>
+      
+      
+      
+      
+      
+      
+      
+      
+      </li>
+    </ul>
 
     
 
-<p>I attended the <strong>blogdown</strong> session at the RStudio conference in Florida. I am enjoying the enthusiasm and energy around R and RStudio.
-It reminds me of the early days of personal computers at the end of the 70&rsquo;s and the beginning of the 80&rsquo;s. Perhaps I am experiencing a second
-childhood. Anyway, all the Cool Kids are doing web pages on GitHub so I want to do it too.</p>
-
-<p>I have done some simple blog posts with Blogger and WordPress. One of my goals is to create a portfolio of the my R projects.
-RMarkdown is the obvious way to go and WordPress doesn&rsquo;t directly support
-that. So that&rsquo;s a motivation to use <strong>blogdown</strong>. But really a bit part of the
-motivation is that these days I am &ldquo;all in&rdquo; with the RStudio set of
-tools so it&rsquo;s natural to put my faith in Yihui Xie and jump in. Because <strong>blogdown</strong> is still developing,
-I know I am goint to suffer through rough edges. As a retiree, I am
-doing this for fun so the rough edges just add to the adventure.</p>
-
-<h3 id="github-pages">GitHub Pages</h3>
-
-<p>I had a little trouble to start because I didn&rsquo;t understand the basics of
-what was going on with GitHub and web pages. Here I am focused on what GitHub refers to as a &ldquo;user site&rdquo; (as opposed to an organization site or a project site). See their <a href="https://pages.github.com/">general description of GitHub Pages</a> and <a href="https://help.github.com/articles/what-is-github-pages">What is GitHub Pages?</a>. The key
-fact is that if you have a repository called <code>username.github.io</code> (with your
-GitHub username), whatever is in that repository will be served
-as a web site accessed as <code>https://username.github.io</code>. What
-we are going to do here is describe how to use <strong>markdown</strong>, RStudio,
-and GitHub to place the content of a static web site into
-your <code>username.github.io</code> repository.</p>
-
-<h3 id="github">GitHub</h3>
-
-<p>The site relies on <strong>blogdown</strong> and GitHub. You have to have at least a beginner&rsquo;s familiarity with GitHub, and believe me, I am merely a
-GitHub beginner. I got my start with GitHub mostly based on information
-from Jenny Bryan (see <a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a>) and from <a href="https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN">RStudio</a>. There&rsquo;s also an <a href="https://guides.github.com/activities/hello-world/">introduction</a> on the GitHub site.</p>
-
-<p>You need to be able to create a repository on GitHub and then
-clone that to a project in RStudio. See especially <a href="http://happygitwithr.com/new-github-first.html">section 16</a> on Happy Git.</p>
-
-<p>In general I try to operate in a way that allows me to rely on RStudio to do most of the work and to avoid doing git commands in the Terminal on OSX.
-That&rsquo;s why I create a minimal repository first on GitHub and then create
-a new project in RStudio that clones the repository from GitHub. Rely on
-Jenny&rsquo;s directions on how to do that.</p>
-
-<h3 id="creating-a-website">Creating a website</h3>
-
-<p>To get started with blogdown, I relied on a post by <a href="https://proquestionasker.github.io/blog/Making_Site/">Amber Thomas</a>,
-especially the comments on the post by Yihui Xie, the creator of
-<strong>blogdown</strong>. Amber&rsquo;s instructions involve more work with Git than I wanted
-to attempt. In particular, she uses multiple branches. Instead,
-I followed the suggestion and created two repositories.
-One was for the site itself (<code>johngoldin.github.io</code>) and the other (which I called <code>pages-source</code>) contains the <strong>blogdown</strong> and <strong>Hugo</strong> material
-that actually produces the site.</p>
-
-<ol>
-<li>Create a repository for username.github.io on your github.</li>
-<li>Clone that to a RStudio project with the same name.</li>
-<li>Create a repository on your github, any name you desire, but here we will calle it <code>hugo-source</code>.</li>
-<li>Clone that second project to an RStudio project.</li>
-</ol>
-
-<p>You are going to use <strong>blogdown</strong> to create a <strong>Hugo</strong> site in
-<code>hugo-source</code>. And you are going to configure that site
-so that whenever it builds a website, it will place that
-website into the RStudio project username.github.io.
-When you push username.github.io to GitHub you will in effect
-publish your website.</p>
-
-<p>(Actually it doesn&rsquo;t matter whether or not you maintain
-a GitHub repository for <code>hugo-source</code>. It depends on whether
-you want to use version control for convenience or backup, just
-as would be true for any other RStudio project.)</p>
-
-<p><a href="http://kevinfw.com/post/blogging-with-r-markdown/">Kevin Wong</a> does a nice
-job of describing the steps needed to get started with <strong>blogdown</strong>. Too bad
-I didn&rsquo;t discover this page until after I started writing this description. But I will follow his text closely here.</p>
-
-<p>Here are the steps in the RStudio project that contains the source for Hugo:</p>
-
-<pre><code>devtools::install_github(&quot;rstudio/blogdown&quot;)
-</code></pre>
-
-<p>In the RStudio project hugo-source (or whatever you have called it), have
-<strong>blogdown</strong> install hugo.</p>
-
-<pre><code>library(blogdown)
-blogdown::install_hugo()
-</code></pre>
-
-<p>Next we wil create a new site:</p>
-
-<pre><code>blogdown::new_site()
-</code></pre>
-
-<p>The hugo-source site has to be <strong>totally</strong> empty. Otherwise you will get an error. Of course as created it will not be totally empty.
-You will have an RProj file and probably <code>.gitignore</code>.  Move those
-out of the project folder and keep them somewhere safe. Run
-<code>new_site</code> again and them move them back into the project folder.</p>
-
-<p>Next you need to install a <strong>Hugo</strong> theme. Go to the <a href="http://themes.gohugo.io/">themes page</a> to find one you like.
-It&rsquo;s hard to know what to pick when you are just starting out.
-I&rsquo;m a novice as well so I can&rsquo;t offer good advice. You can
-avoid a choice for now and just stick with the default theme
-that is installed as part of the new_site() call.</p>
-
-<p>If you have chosen a different theme, use the install_theme call:</p>
-
-<pre><code>install_theme(&quot;spf13/hyde&quot;)
-</code></pre>
-
-<p>To try out your site,</p>
-
-<pre><code>blogdown::serve_site()
-</code></pre>
-
-<p>With luck, the web site should appear in your RStudio View pane.</p>
-
-<p>How to you get this site running in <strong>GitHub</strong>? There&rsquo;s a neat trick.
-Edit the <code>config.toml</code> file in the <code>hugo-pages</code> project folder and
-add this magic line:</p>
-
-<pre><code>publishDir = &quot;../username.github.io&quot;   # where username is your GitHub name
-</code></pre>
-
-<p>Whenever you run serve_site(), the constructed site will be
-created in the <code>username.github.io</code> directory rather than in <code>hugo-pages</code>.
-To get the site working on <strong>GitHub</strong>, switch to the <code>username.github.io</code> project in RStudio,
-go to the Git pane in RStudio, select all the changed files, <code>Commit</code>,
-and then <code>Push</code> the changes to <strong>GitHub</strong>. Magic! The same code
-that is creating the trial web site on your local computer will
-now be the reproduced exactly in the <code>username.github.io</code>
-repository on <strong>GitHub</strong> and can be accessed as <a href="http://username.github.io">http://username.github.io</a>.</p>
-
-<p>You can work on your web site on your local RStudio project. When you think it is ready to publish changes
-for all the world to see, go to the <code>username.github.io</code> project and
-push the changes to <strong>GitHub</strong> and you have published your changes on the web.</p>
-
-<h3 id="now-what">Now What?</h3>
-
-<p>I now have a working web site on <strong>GitHub</strong>. But I have a ways to go to learn
-how to take advantage of <strong>Hugo</strong> on an ongoing basis. So far I have added
-one and only one post. I have looked at the <a href="http://gohugo.io/overview/usage/">Hugo documentation</a> a bit to try to figure out how to do some basis things.
-For example, <a href="https://gohugo.io/extras/shortcodes#ref-relref">this page</a> tells
-me how to add a cross-reference to a post on my site.</p>
-
-<p>It is not yet clear to me how I will take advantage of my <strong>Hugo</strong> <strong>GitHub</strong> site on an ongoing basis.
-One of the features of <strong>blogdown</strong> is that I can use RMarkdown.
-How will I do that in practice?
-I&rsquo;ll have an RMarkdown file in a project I am working on that
-documents or demonstrates that project. Will I <code>knit</code> the file
-and then move the html to my <strong>blogdown</strong> project? Will
-I move the Rmd file to the <strong>blogdown</strong> project and include a <code>setwd</code> function
-call to point to the project that it comes from? I haven&rsquo;t
-tried any of this in practice yet. I need to look at the existing <strong>blogdown</strong>
-examples more closely. When I know more, I&rsquo;ll add to this introduction.</p>
-
+    <p>Copyright &copy; 2017 <a href="./license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
   </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="./about/">
-        About
-      </a>
-    </h1>
-
-    <span class="post-date">Fri, Feb 10, 2017</span>
-
-    <p>This website is intended to described some of my personal R projects. It may include some posts on other general subjects.</p>
-
-<p>This is my first attempt to use the <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> package
-to setup and maintain a website via <a href="https://gohugo.io/"><strong>Hugo</strong></a> and available
-via <a href="https://pages.github.com/"><strong>GitHub Pages</strong></a>. This site uses the <a href="http://themes.gohugo.io/hyde/">Hyde theme</a> in Hugo.</p>
-
-<p>To get started, I first looked at a <a href="https://proquestionasker.github.io/blog/Making_Site/">post by Amber Thomas</a>. I did not
-follow her steps very closely. Instead, I aimed to rely more on the
-RStudio side of things than on GitHub. Based on the items in the comment
-thread by blogdown&rsquo;s creator Yihui Xie, I decided to rely on two
-repositories. One for the raw material for the web site and then
-johngoldin.github.io to contain the static website created by Hugo.
-Amber&rsquo;s instructions involve creating two branches in the johngoldin.github.io repository.
-That sounded too complicated.</p>
-
-<p>Previously I did some <a href="https://caniblogtoo.wordpress.com/">posts on WordPress</a> and before that
-I did some on <a href="http://goldinoldie.blogspot.com/">Blogger</a>.</p>
-
-  </div>
-  
-</div>
 </div>
 
-  </body>
+
+<div class="content container">
+  <div class="posts">
+    
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="./2017/02/11/how-i-set-up-this-site/">How I Set Up This Site</a>
+      </h1>
+      <span class="post-date">Feb 11, 2017 &middot; 6 minute read &middot; <a href="./2017/02/11/how-i-set-up-this-site/#disqus_thread">Comments</a>
+      
+      <br/>
+      <a class="label" href="./categories/development">Development</a><a class="label" href="./categories/golang">GoLang</a>
+      </span>
+      
+      I attended the blogdown session at the RStudio conference in Florida. I am enjoying the enthusiasm and energy around R and RStudio. It reminds me of the early days of personal computers at the end of the 70&rsquo;s and the beginning of the 80&rsquo;s. Perhaps I am experiencing a second childhood. Anyway, all the Cool Kids are doing web pages on GitHub so I want to do it too.
+      <a href="./2017/02/11/how-i-set-up-this-site/">Read On &rarr;</a>
+      
+    </div>
+    
+    
+    
+  </div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "johngoldin";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+</body>
 </html>
+
