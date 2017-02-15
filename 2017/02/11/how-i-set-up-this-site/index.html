@@ -80,7 +80,7 @@
 <div class="content container">
   <div class="post">
     <h1 class="post-title">How I Set Up This Site</h1>
-    <span class="post-date">Feb 11, 2017 &middot; 6 minute read
+    <span class="post-date">Feb 11, 2017 &middot; 7 minute read
     
     <br/>
     <a class="label" href="../../../../categories/blogdown">blogdown</a><a class="label" href="../../../../categories/github">GitHub</a>
@@ -93,10 +93,10 @@ childhood. Anyway, all the Cool Kids are doing web pages on GitHub so I want to 
 
 <p>I have done some simple blog posts with Blogger and WordPress. One of my goals is to create a portfolio of the my R projects.
 RMarkdown is the obvious way to go and WordPress doesn&rsquo;t directly support
-that. So that&rsquo;s a motivation to use <strong>blogdown</strong>. But really a bit part of the
+that. So that&rsquo;s a motivation to use <strong>blogdown</strong>. But a big  part of the
 motivation is that these days I am &ldquo;all in&rdquo; with the RStudio set of
 tools so it&rsquo;s natural to put my faith in Yihui Xie and jump in. Because <strong>blogdown</strong> is still developing,
-I know I am goint to suffer through rough edges. As a retiree, I am
+I know I am going to suffer through rough edges. As a retiree, I am
 doing this for fun so the rough edges just add to the adventure.</p>
 
 <h3 id="github-pages">GitHub Pages</h3>
@@ -130,25 +130,25 @@ Jenny&rsquo;s directions on how to do that.</p>
 especially the comments on the post by Yihui Xie, the creator of
 <strong>blogdown</strong>. Amber&rsquo;s instructions involve more work with Git than I wanted
 to attempt. In particular, she uses multiple branches. Instead,
-I followed the suggestion and created two repositories.
+I followed the suggestion in the comments by Yihui Xie and created two repositories.
 One was for the site itself (<code>johngoldin.github.io</code>) and the other (which I called <code>pages-source</code>) contains the <strong>blogdown</strong> and <strong>Hugo</strong> material
 that actually produces the site.</p>
 
 <ol>
 <li>Create a repository for username.github.io on your github.</li>
 <li>Clone that to a RStudio project with the same name.</li>
-<li>Create a repository on your github, any name you desire, but here we will calle it <code>hugo-source</code>.</li>
+<li>Create a repository on your github, any name you desire, but here we will call it <code>hugo-source</code>.</li>
 <li>Clone that second project to an RStudio project.</li>
 </ol>
 
-<p>You are going to use <strong>blogdown</strong> to create a <strong>Hugo</strong> site in
+<p>You are going to use <strong>blogdown</strong> to create a <strong>Hugo</strong> site created by files in the RStudio project
 <code>hugo-source</code>. And you are going to configure that site
 so that whenever it builds a website, it will place that
 website into the RStudio project username.github.io.
 When you push username.github.io to GitHub you will in effect
 publish your website.</p>
 
-<p>(Actually it doesn&rsquo;t matter whether or not you maintain
+<p>(It doesn&rsquo;t matter whether or not you maintain
 a GitHub repository for <code>hugo-source</code>. It depends on whether
 you want to use version control for convenience or backup, just
 as would be true for any other RStudio project.)</p>
@@ -157,9 +157,10 @@ as would be true for any other RStudio project.)</p>
 job of describing the steps needed to get started with <strong>blogdown</strong>. Too bad
 I didn&rsquo;t discover this page until after I started writing this description. But I will follow his text closely here.</p>
 
-<p>Here are the steps in the RStudio project that contains the source for Hugo:</p>
+<p>Here are the steps in the RStudio project that contains the source for Hugo. If you don&rsquo;t already have <code>devtools</code> installed as a pckage, use the Packages tab in RStudio to add that package.</p>
 
-<pre><code>devtools::install_github(&quot;rstudio/blogdown&quot;)
+<pre><code>library(devtools)
+devtools::install_github(&quot;rstudio/blogdown&quot;)
 </code></pre>
 
 <p>In the RStudio project hugo-source (or whatever you have called it), have
@@ -169,7 +170,7 @@ I didn&rsquo;t discover this page until after I started writing this description
 blogdown::install_hugo()
 </code></pre>
 
-<p>Next we wil create a new site:</p>
+<p>Next we wil have Hugo create a new site:</p>
 
 <pre><code>blogdown::new_site()
 </code></pre>
@@ -190,12 +191,19 @@ that is installed as part of the new_site() call.</p>
 <pre><code>install_theme(&quot;spf13/hyde&quot;)
 </code></pre>
 
+<p>The above commands  will be needed only once when you first
+setup the project.</p>
+
 <p>To try out your site,</p>
 
 <pre><code>blogdown::serve_site()
 </code></pre>
 
 <p>With luck, the web site should appear in your RStudio View pane.</p>
+
+<p>If you make changes in a post, they will automatically update
+in the site if it is running, You press the <strong>stop</strong> button to halt the site. To restart it in the RStudio Viewer pane, you
+can again use <code>blogdown::serve_site()</code>.</p>
 
 <p>How to you get this site running in <strong>GitHub</strong>? There&rsquo;s a neat trick.
 Edit the <code>config.toml</code> file in the <code>hugo-pages</code> project folder and
@@ -204,18 +212,25 @@ add this magic line:</p>
 <pre><code>publishDir = &quot;../username.github.io&quot;   # where username is your GitHub name
 </code></pre>
 
-<p>Whenever you run serve_site(), the constructed site will be
+<p>Whenever you run blogdown::serve_site(), the constructed site will be
 created in the <code>username.github.io</code> directory rather than in <code>hugo-pages</code>.
 To get the site working on <strong>GitHub</strong>, switch to the <code>username.github.io</code> project in RStudio,
 go to the Git pane in RStudio, select all the changed files, <code>Commit</code>,
 and then <code>Push</code> the changes to <strong>GitHub</strong>. Magic! The same code
 that is creating the trial web site on your local computer will
-now be the reproduced exactly in the <code>username.github.io</code>
+now be reproduced exactly in the <code>username.github.io</code>
 repository on <strong>GitHub</strong> and can be accessed as <a href="http://username.github.io">http://username.github.io</a>.</p>
 
 <p>You can work on your web site on your local RStudio project. When you think it is ready to publish changes
 for all the world to see, go to the <code>username.github.io</code> project and
 push the changes to <strong>GitHub</strong> and you have published your changes on the web.</p>
+
+<p>In summary, here are the steps to maintain the site:<br />
+1. edit the site in the hugo-source project<br />
+2. run blogdown::serve_site() to refresh the site<br />
+3. switch to the username.github.io project on your local machine<br />
+4. commit all changes<br />
+5. push those changes to username.github.io on GitHub.</p>
 
 <h3 id="now-what">Now What?</h3>
 
