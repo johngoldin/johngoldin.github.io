@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Can I Blog Too</title>
-    <link>/index.xml</link>
-    <description>Recent content on Can I Blog Too</description>
+    <title>Github on Can I Blog Too</title>
+    <link>/categories/github/index.xml</link>
+    <description>Recent content in Github on Can I Blog Too</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/github/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How I Set Up This Site</title>
@@ -165,52 +164,6 @@ I move the Rmd file to the &lt;strong&gt;blogdown&lt;/strong&gt; project and inc
 call to point to the project that it comes from? I haven&amp;rsquo;t
 tried any of this in practice yet. I need to look at the existing &lt;strong&gt;blogdown&lt;/strong&gt;
 examples more closely. When I know more, I&amp;rsquo;ll add to this introduction.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>&lt;p&gt;This website is intended to described some of my personal R projects. It may include some posts on other general subjects.&lt;/p&gt;
-
-&lt;p&gt;This is my first attempt to use the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package
-to setup and maintain a website via &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/a&gt; and available
-via &lt;a href=&#34;https://pages.github.com/&#34;&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt;&lt;/a&gt;. This site uses the &lt;a href=&#34;http://themes.gohugo.io/hyde/&#34;&gt;Hyde theme&lt;/a&gt; in Hugo.&lt;/p&gt;
-
-&lt;p&gt;To get started, I first looked at a &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;post by Amber Thomas&lt;/a&gt;. I did not
-follow her steps very closely. Instead, I aimed to rely more on the
-RStudio side of things than on GitHub. Based on the items in the comment
-thread by blogdown&amp;rsquo;s creator Yihui Xie, I decided to rely on two
-repositories. One for the raw material for the web site and then
-johngoldin.github.io to contain the static website created by Hugo.
-Amber&amp;rsquo;s instructions involve creating two branches in the johngoldin.github.io repository.
-That sounded too complicated.&lt;/p&gt;
-
-&lt;p&gt;Previously I did some &lt;a href=&#34;https://caniblogtoo.wordpress.com/&#34;&gt;posts on WordPress&lt;/a&gt; and before that
-I did some on &lt;a href=&#34;http://goldinoldie.blogspot.com/&#34;&gt;Blogger&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/license/</guid>
-      <description>&lt;p&gt;The MIT License&lt;/p&gt;
-
-&lt;p&gt;SPDX short identifier: MIT&lt;/p&gt;
-
-&lt;p&gt;Copyright 2017 John Goldin&lt;/p&gt;
-
-&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
-
-&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&lt;/p&gt;
-
-&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
 </description>
     </item>
     
