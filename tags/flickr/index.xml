@@ -16,14 +16,14 @@
       <guid>/2016/07/03/using-the-flickr-api-from-r/</guid>
       <description>&lt;p&gt;There used to be an &lt;a href=&#34;https://github.com/duncantl/Rflickr/blob/master/inst/doc/Rflickr.xml&#34;&gt;Rflickr package&lt;/a&gt;, but it no longer seems to work. It was last updated in 2011. I had a lot of trouble googling information on how to access Flickr from R. &lt;a href=&#34;http://timelyportfolio.github.io/rCharts_Rflickr/iso_httr.html&#34;&gt;This example&lt;/a&gt; really got me started. It is doing very different things that what I wanted to do, so it may be more useful than what I am laying out here, depending on your goal.&lt;/p&gt;
 
-&lt;p&gt;To see where all this is leading, see my Shiny app which displays [souvenirs of my walks](&lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;https://goldin.shinyapps.io/Walks/&lt;/a&gt;. Click on a camera
+&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;../../img/Hadrians-Wall-screenshot.png&#34;, height=&#34;301&#34;, width=&#34;252&#34;&gt;To see where all this is leading, see my Shiny app which displays &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;souvenirs of my walks&lt;/a&gt;. Click on a camera
 icon and you will see a thumbnail photo from Flickr in a popup. Click on the popup, and you will be taken to the full-sized photo in Flickr.&lt;/p&gt;
 
 &lt;p&gt;Before you can get Flickr data into R via their web API, you will need to &lt;a href=&#34;https://www.flickr.com/services/api/misc.api_keys.html&#34;&gt;sign up for a key&lt;/a&gt;. You will get a &lt;code&gt;user_id&lt;/code&gt; and an &lt;code&gt;api_key&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I save the &lt;code&gt;user_id&lt;/code&gt; and &lt;code&gt;api_key&lt;/code&gt; in a file that I load before executing the calls to the API. That way I am not showing the &lt;code&gt;api_key&lt;/code&gt; in my code. In the examples below, these are loaded from &lt;code&gt;flickr_values.RData&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The gateway to information about accessing Flickr data is via The App Garden page at flickr.com. From that page you can go to the documentation for each call to the API. At the bottom of each documentation page there should be an API Explorer that takes you to a page that lets you try out the API call. See photosets.getList as an example. The API Explorer is a huge help and a great tool.&lt;/p&gt;
+&lt;p&gt;The gateway to information about accessing Flickr data is via &lt;a href=&#34;https://www.flickr.com/services/api/&#34;&gt;The App Garden&lt;/a&gt; page at &lt;a href=&#34;https://www.flickr.com/&#34;&gt;flickr&lt;/a&gt;. From that page you can go to the documentation for each call to the API. At the bottom of each documentation page there should be an API Explorer that takes you to a page that lets you try out the API call. See &lt;a href=&#34;https://www.flickr.com/services/api/explore/flickr.photosets.getList&#34;&gt;photosets.getList&lt;/a&gt; as an example. The API Explorer is a huge help and a great tool.&lt;/p&gt;
 
 &lt;p&gt;Here’s the code for an R function that will get a list of photosets (or albums):&lt;/p&gt;
 
