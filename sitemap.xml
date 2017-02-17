@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2017/02/17/portfolio-of-projects/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2017-02-14T00:00:00+00:00</lastmod>
   </url>
@@ -12,13 +17,12 @@
   </url>
   
   <url>
-    <loc>/license/</loc>
+    <loc>/2016/07/03/using-the-flickr-api-from-r/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/blogdown/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/license/</loc>
   </url>
   
   <url>
@@ -28,8 +32,14 @@
   </url>
   
   <url>
+    <loc>/tags/blogdown/</loc>
+    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,8 +49,14 @@
   </url>
   
   <url>
-    <loc>/tags/github/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <loc>/categories/flickr/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/flickr/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,8 +67,38 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/tags/github/</loc>
     <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/leaflet/</loc>
+    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/personal/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

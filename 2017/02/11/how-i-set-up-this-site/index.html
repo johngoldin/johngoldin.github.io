@@ -32,6 +32,16 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', ' UA-92008736-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
 </head>
 <body class="theme-base-08">
 <div class="sidebar">
@@ -39,7 +49,7 @@
     <div class="sidebar-about">
       
       <h1>Can I Blog Too</h1>
-      
+      <p class="lead">Notes on this and that&hellip;</p>
     </div>
 
     <ul class="sidebar-nav">
@@ -80,7 +90,7 @@
 <div class="content container">
   <div class="post">
     <h1 class="post-title">How I Set Up This Site</h1>
-    <span class="post-date">Feb 11, 2017 &middot; 8 minute read &middot; <a href="../../../../2017/02/11/how-i-set-up-this-site/#disqus_thread">Comments</a>
+    <span class="post-date">Feb 11, 2017 &middot; <a href="../../../../2017/02/11/how-i-set-up-this-site/#disqus_thread">Comments</a>
     
     <br/>
     <a class="label" href="../../../../categories/blogdown">blogdown</a><a class="label" href="../../../../categories/github">GitHub</a>
@@ -254,14 +264,14 @@ examples more closely. When I know more, I&rsquo;ll add to this introduction.</p
 <p>I have switched to the Hyde-x theme rather than just Hyde.
 Configuration has involved a lot of trial and error.
 I setup Disqus and briefly saw the ability to do comments on my blog. But after and I made some unrelated changes,
-I no longer see any sign of Disqus.</p>
+I no longer saw any sign of Disqus.
+Eventually I realized that I was confused (and ignorant) about the
+syntax of <code>config.toml</code>. I had had a square-brackets author line above
+the line that set <code>disqusShortname</code> and as a result <code>disqusShortname</code>
+wasn&rsquo;t getting set. I moved things around and comments reappeared.</p>
 
-<p>I have had a number of other questions aboiut how thigs are supposed to work. I briefly tried Hyde-y rather than
-Hyde-x. But with Hyde-y I only saw the sidebar at the top
-rather than to the left, as specified in <code>config.toml</code>.</p>
-
-<p>At this point I hope to do some other posts and see what happens.
-Maybe comments will magically reappear.</p>
+<p>This is typical of the blundering around I am doing with Hugo and themes.
+I guess it&rsquo;s a learning experience.</p>
 
   </div>
   <div id="disqus_thread"></div>

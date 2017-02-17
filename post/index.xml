@@ -6,8 +6,55 @@
     <description>Recent content in Posts on Can I Blog Too</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Portfolio of Projects</title>
+      <link>/2017/02/17/portfolio-of-projects/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/17/portfolio-of-projects/</guid>
+      <description>
+
+&lt;!--- created with this command:
+# blogdown::new_post(&#34;Portfolio of Projects&#34;, categories = c(&#34;R&#34;, &#34;personal&#34;), tags = c(&#34;R&#34;), rmd = FALSE)  ---&gt;
+
+&lt;p&gt;One motivation for creating this blog was to display a portfolio of projects that I have worked
+on in the last year or so. I&amp;rsquo;ll list projects here.
+Eventually I hope to create pages that elaborate each project.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-diary-of-samuel-pepys&#34;&gt;The Diary of Samuel Pepys&lt;/h3&gt;
+
+&lt;p&gt;Each morning I read an entry from
+&lt;a href=&#34;http://www.pepysdiary.com/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt; at a wonderful
+site created by &lt;a href=&#34;http://www.gyford.com/&#34;&gt;Phil Gyford&lt;/a&gt;. Pepys kept the diary for about ten years during the 1660&amp;rsquo;s.
+Inspired by a post by
+&lt;a href=&#34;http://juliasilge.com/blog/Life-Changing-Magic/&#34;&gt;Julia Silge&lt;/a&gt;,
+I did some simple
+text processing on the diary. That became the
+occasion for my first shot at creating a Shiny app.
+The result is available &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I had an opportunity to chat with Julia at the RStudio Conference in Orlando. She gave me some suggestions
+for some additional things I might do with the diary.&lt;/p&gt;
+
+&lt;h3 id=&#34;souvenirs-of-my-walks&#34;&gt;Souvenirs of My Walks&lt;/h3&gt;
+
+&lt;p&gt;I have always loved to walk. When I retired in 2011 I went on a walking binge.
+At the same time, I discovered that a GPS trace
+could be a fun souvenir of my walks.
+An &lt;a href=&#34;http://mhermans.net/hiking-gpx-r-leaflet.html&#34;&gt;article&lt;/a&gt; I found via &lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R Bloggers&lt;/a&gt; led me
+to try to keep track of my walks more systematically.
+After doing some research on how to access the Flickr API from R,
+I was able to display my photos from Flickr on the GPS trace in a Leaflet map.
+The result is a Shiny app &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;here&lt;/a&gt;.
+I don&amp;rsquo;t thnk this is of great interest to a stranger, but for me it is a fascinating
+picture of my walks. I love to zoom in and see the detail of the map combined with the GPS trace and the photos.
+Like a good souvenir, it triggers lots of memories. If I lingered on a bench additional squiggles appear
+on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How I Set Up This Site</title>
@@ -184,14 +231,137 @@ examples more closely. When I know more, I&amp;rsquo;ll add to this introduction
 &lt;p&gt;I have switched to the Hyde-x theme rather than just Hyde.
 Configuration has involved a lot of trial and error.
 I setup Disqus and briefly saw the ability to do comments on my blog. But after and I made some unrelated changes,
-I no longer see any sign of Disqus.&lt;/p&gt;
+I no longer saw any sign of Disqus.
+Eventually I realized that I was confused (and ignorant) about the
+syntax of &lt;code&gt;config.toml&lt;/code&gt;. I had had a square-brackets author line above
+the line that set &lt;code&gt;disqusShortname&lt;/code&gt; and as a result &lt;code&gt;disqusShortname&lt;/code&gt;
+wasn&amp;rsquo;t getting set. I moved things around and comments reappeared.&lt;/p&gt;
 
-&lt;p&gt;I have had a number of other questions aboiut how thigs are supposed to work. I briefly tried Hyde-y rather than
-Hyde-x. But with Hyde-y I only saw the sidebar at the top
-rather than to the left, as specified in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This is typical of the blundering around I am doing with Hugo and themes.
+I guess it&amp;rsquo;s a learning experience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using the Flickr API from R</title>
+      <link>/2016/07/03/using-the-flickr-api-from-r/</link>
+      <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/07/03/using-the-flickr-api-from-r/</guid>
+      <description>&lt;p&gt;There used to be an &lt;a href=&#34;https://github.com/duncantl/Rflickr/blob/master/inst/doc/Rflickr.xml&#34;&gt;Rflickr package&lt;/a&gt;, but it no longer seems to work. It was last updated in 2011. I had a lot of trouble googling information on how to access Flickr from R. &lt;a href=&#34;http://timelyportfolio.github.io/rCharts_Rflickr/iso_httr.html&#34;&gt;This example&lt;/a&gt; really got me started. It is doing very different things that what I wanted to do, so it may be more useful than what I am laying out here, depending on your goal.&lt;/p&gt;
 
-&lt;p&gt;At this point I hope to do some other posts and see what happens.
-Maybe comments will magically reappear.&lt;/p&gt;
+&lt;p&gt;To see where all this is leading, see my Shiny app which displays [souvenirs of my walks](&lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;https://goldin.shinyapps.io/Walks/&lt;/a&gt;. Click on a camera
+icon and you will see a thumbnail photo from Flickr in a popup. Click on the popup, and you will be taken to the full-sized photo in Flickr.&lt;/p&gt;
+
+&lt;p&gt;Before you can get Flickr data into R via their web API, you will need to &lt;a href=&#34;https://www.flickr.com/services/api/misc.api_keys.html&#34;&gt;sign up for a key&lt;/a&gt;. You will get a &lt;code&gt;user_id&lt;/code&gt; and an &lt;code&gt;api_key&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I save the &lt;code&gt;user_id&lt;/code&gt; and &lt;code&gt;api_key&lt;/code&gt; in a file that I load before executing the calls to the API. That way I am not showing the &lt;code&gt;api_key&lt;/code&gt; in my code. In the examples below, these are loaded from &lt;code&gt;flickr_values.RData&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The gateway to information about accessing Flickr data is via The App Garden page at flickr.com. From that page you can go to the documentation for each call to the API. At the bottom of each documentation page there should be an API Explorer that takes you to a page that lets you try out the API call. See photosets.getList as an example. The API Explorer is a huge help and a great tool.&lt;/p&gt;
+
+&lt;p&gt;Here’s the code for an R function that will get a list of photosets (or albums):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(httr)
+library(jsonlite)
+
+load(file = &amp;quot;flickr_values.RData&amp;quot;) # to get user_id and api_key for flickr calls
+
+# test: an_album &amp;lt;- flickr_photosets_getlist(api_key, user_id)
+flickr_photosets_getlist &amp;lt;- function(the_api_key = api_key, the_user_id = user_id) {
+  # flickr_photosets_getlist returns a data.frame with info on the albums.
+  xx &amp;lt;- GET(url=sprintf(
+    &amp;quot;https://api.flickr.com/services/rest/?method=flickr.photosets.getList&amp;amp;api_key=%s&amp;amp;user_id=%s&amp;amp;format=json&amp;amp;nojsoncallback=1&amp;quot;
+    , the_api_key
+    , the_user_id
+  )
+  ) %&amp;gt;% content(as = &amp;quot;text&amp;quot;) %&amp;gt;%
+    fromJSON()  # check that xy$stat == &amp;quot;ok&amp;quot;
+  if (xx$stat != &amp;quot;ok&amp;quot;) return(xx$stat)
+  albums &amp;lt;- xx$photosets[[5]]
+  return(albums)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I get a message that says “No encoding supplied: defaulting to UTF-8.” Based on some googling, I think that’s from the GET call (from httr). I think this will disappear with a future version of httr.&lt;/p&gt;
+
+&lt;p&gt;Now that we have a data.frame that describes the albums, we can go on to get info about the photos in that album. (Remember that a photoset in the lingo of the API corresponds to an album in the terms used by the main Flickr site.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#test:  xx &amp;lt;- flickr_photosets_getphotos(the_photoset_id = &amp;quot;72157657606414684&amp;quot;)
+flickr_photosets_getphotos &amp;lt;- function(the_photoset_id = NULL, 
+                                       time_start = NULL, 
+                                       time_end = NULL, 
+                                       the_api_key = api_key, 
+                                       the_user_id = user_id) {
+  # returns data.frame of photos including datetaken, latitude, longitude, 
+  # url_m, height_m, width_m and url_s, height_s, height_m
+  xx &amp;lt;- GET(url=sprintf(
+    &amp;quot;https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&amp;amp;api_key=%s&amp;amp;photoset_id=%s&amp;amp;user_id=%s&amp;amp;extras=%s&amp;amp;format=json&amp;amp;nojsoncallback=1&amp;quot;
+    , the_api_key
+    , the_photoset_id
+    , the_user_id
+    , &amp;quot;description,date_taken,geo,url_m,url_s&amp;quot;
+  )
+  ) %&amp;gt;% content(as = &amp;quot;text&amp;quot;) %&amp;gt;%
+    fromJSON()  # check that xx$stat == &amp;quot;ok&amp;quot;
+  if (xx$stat != &amp;quot;ok&amp;quot;) {
+    print(paste(&amp;quot;Flickr error&amp;quot;, code, message))
+    return(xx$stat)
+  }
+  # description gets returned as a data.frame. I&#39;m not sure why. so get _content
+  xx$description &amp;lt;- xx$description[ ,&amp;quot;_content&amp;quot;]
+  xx$photoset$photo$datetaken &amp;lt;- ymd_hms(xx$photoset$photo$datetaken)
+  xx$photoset$latitude &amp;lt;- as.numeric(xx$photoset$latitude)
+  xx$photoset$longitude &amp;lt;- as.numeric(xx$photoset$longitude)
+  xx$photoset$photo$latitude &amp;lt;- ifelse(xx$photoset$photo$latitude != 0, xx$photoset$photo$latitude, NA)
+  xx$photoset$photo$longitude &amp;lt;- ifelse(xx$photoset$photo$longitude != 0, xx$photoset$photo$longitude, NA)
+  if (is.null(time_start) &amp;amp; is.null(time_end)) return(xx$photoset$photo)
+  filter(xx$photoset$photo, is.null(time_start) | (datetaken &amp;gt;= time_start), is.null(time_end) | (datetaken &amp;gt;= time_end))
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What I wanted from Flickr was to be able to show a thumbnail version of a photo to add to a marker on a Leaflet map and then send the person to the photo at the Flickr site if the viewer clicked on the thumbnail.&lt;/p&gt;
+
+&lt;p&gt;The flickr API constructs URL’s that fetch small or medium sized version of the photo.&lt;/p&gt;
+
+&lt;p&gt;Here is a facsimile of the code I used to add markers to the Leaflet map.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# produce a flickr URL like the following:
+# https://www.flickr.com/photos/99418994@N00/22042568849/in/album-72157657606414684/
+photos_in_album_url &amp;lt;- function(album_id, photo_id, user_id) {
+  sprintf(&amp;quot;https://www.flickr.com/photos/%s/%s/in/album-%s/&amp;quot;,
+                 user_id,
+                 photo_id,
+                 album_id)
+}
+
+add_photos_to_map &amp;lt;- function(photos_df, a_map = null) {
+  if (is.null(a_map)) {
+    a_map &amp;lt;- leaflet(height = &amp;quot;700px&amp;quot;, width = NULL) %&amp;gt;%
+      addProviderTiles(&amp;quot;Thunderforest.Landscape&amp;quot;, group = &amp;quot;Topographical&amp;quot;) %&amp;gt;%
+      addProviderTiles(&amp;quot;Esri.WorldImagery&amp;quot;, group = &amp;quot;Satellite&amp;quot;) %&amp;gt;%
+      addProviderTiles(&amp;quot;OpenStreetMap.Mapnik&amp;quot;, group = &amp;quot;Road map&amp;quot;) 
+  }
+  photos_df &amp;lt;- filter(photos_df, !is.na(lng), !is.na(lat), include) # include == TRUE for the photos I want to add.
+
+  # photo_in_album is created by photos_in_album_url().  
+  # e.g., xx$trip_photos$photo_in_album &amp;lt;- map2_chr(xx$trip_photos$album_id, xx$trip_photos$id, photos_in_album_url, user_id) (using the purrr package that is part of the Hadleyverse)
+  a_map &amp;lt;- addMarkers(m, lng=photos_df$lng, lat= photos_df$lat,  
+                  popup = sprintf(&amp;quot;&amp;lt;a href=\&amp;quot;%s\ \&amp;quot; target=\&amp;quot;_blank\&amp;quot;&amp;gt;
+                                  &amp;lt;IMG SRC=\&amp;quot;%s\&amp;quot; ALT=\&amp;quot;%s\&amp;quot; WIDTH=%s HEIGHT=%s&amp;gt;%s &amp;lt;/a&amp;gt;&amp;quot;, 
+                                  photos_df$photo_in_album,
+                                  photos_df$url_s, 
+                                  &amp;quot;Click to go to photo in Flickr&amp;quot;,
+                                  photos_df$width_s,
+                                  photos_df$height_s,
+                                  photos_df$description),  
+                  icon = photoIcon, # function providing custom marker-icons
+                  group=&#39;Photo markers&#39;)
+  a_map
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I used these calls to add photo markers a Leaflet map showing souvenirs of my walking holidays.
+You can see the results &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

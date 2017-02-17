@@ -1,59 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Can I Blog Too</title>
-    <link>/categories/r/index.xml</link>
-    <description>Recent content in R on Can I Blog Too</description>
+    <title>Flickr on Can I Blog Too</title>
+    <link>/categories/flickr/index.xml</link>
+    <description>Recent content in Flickr on Can I Blog Too</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Portfolio of Projects</title>
-      <link>/2017/02/17/portfolio-of-projects/</link>
-      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/02/17/portfolio-of-projects/</guid>
-      <description>
-
-&lt;!--- created with this command:
-# blogdown::new_post(&#34;Portfolio of Projects&#34;, categories = c(&#34;R&#34;, &#34;personal&#34;), tags = c(&#34;R&#34;), rmd = FALSE)  ---&gt;
-
-&lt;p&gt;One motivation for creating this blog was to display a portfolio of projects that I have worked
-on in the last year or so. I&amp;rsquo;ll list projects here.
-Eventually I hope to create pages that elaborate each project.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-diary-of-samuel-pepys&#34;&gt;The Diary of Samuel Pepys&lt;/h3&gt;
-
-&lt;p&gt;Each morning I read an entry from
-&lt;a href=&#34;http://www.pepysdiary.com/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt; at a wonderful
-site created by &lt;a href=&#34;http://www.gyford.com/&#34;&gt;Phil Gyford&lt;/a&gt;. Pepys kept the diary for about ten years during the 1660&amp;rsquo;s.
-Inspired by a post by
-&lt;a href=&#34;http://juliasilge.com/blog/Life-Changing-Magic/&#34;&gt;Julia Silge&lt;/a&gt;,
-I did some simple
-text processing on the diary. That became the
-occasion for my first shot at creating a Shiny app.
-The result is available &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I had an opportunity to chat with Julia at the RStudio Conference in Orlando. She gave me some suggestions
-for some additional things I might do with the diary.&lt;/p&gt;
-
-&lt;h3 id=&#34;souvenirs-of-my-walks&#34;&gt;Souvenirs of My Walks&lt;/h3&gt;
-
-&lt;p&gt;I have always loved to walk. When I retired in 2011 I went on a walking binge.
-At the same time, I discovered that a GPS trace
-could be a fun souvenir of my walks.
-An &lt;a href=&#34;http://mhermans.net/hiking-gpx-r-leaflet.html&#34;&gt;article&lt;/a&gt; I found via &lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R Bloggers&lt;/a&gt; led me
-to try to keep track of my walks more systematically.
-After doing some research on how to access the Flickr API from R,
-I was able to display my photos from Flickr on the GPS trace in a Leaflet map.
-The result is a Shiny app &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;here&lt;/a&gt;.
-I don&amp;rsquo;t thnk this is of great interest to a stranger, but for me it is a fascinating
-picture of my walks. I love to zoom in and see the detail of the map combined with the GPS trace and the photos.
-Like a good souvenir, it triggers lots of memories. If I lingered on a bench additional squiggles appear
-on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="/categories/flickr/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using the Flickr API from R</title>
