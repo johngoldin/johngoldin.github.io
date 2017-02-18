@@ -71,7 +71,7 @@ via &lt;a href=&#34;https://pages.github.com/&#34;&gt;&lt;strong&gt;GitHub Pages
 
 &lt;p&gt;My first post describes &lt;a href=&#34;./2017/02/11/how-i-set-up-this-site/&#34;&gt;how I set up this site&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Previously I did some &lt;a href=&#34;https://caniblogtoo.wordpress.com/&#34;&gt;posts on WordPress&lt;/a&gt; and before that
+&lt;p&gt;Previously I did some &lt;a href=&#34;https://caniblogtoo.wordpress.com/&#34;&gt;posts on WordPress&lt;/a&gt; (which I have recreated in this blog) and before that
 I did some on &lt;a href=&#34;http://goldinoldie.blogspot.com/&#34;&gt;Blogger&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I am semi-retired. Until 2011 I was the Director of Institutional Research at Yale University.&lt;/p&gt;
@@ -391,11 +391,11 @@ You can see the results &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&
     </item>
     
     <item>
-      <title>Technical Note--Shiny Souvenir Map</title>
-      <link>/2016/06/28/technical-note--shiny-souvenir-map/</link>
+      <title>Technical Note--Shiny Souvenir Map of Walks</title>
+      <link>/2016/06/28/technical-note--shiny-souvenir-map-of-walks/</link>
       <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/06/28/technical-note--shiny-souvenir-map/</guid>
+      <guid>/2016/06/28/technical-note--shiny-souvenir-map-of-walks/</guid>
       <description>&lt;p&gt;I have used RStudio’s Shiny to create a &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;map page&lt;/a&gt; where I can display GPS traces and photos from walks I have done during the last five years.&lt;/p&gt;
 
 &lt;p&gt;The map is based on an example provided by Maarten Hermans in  a &lt;a href=&#34;http://mhermans.net/hiking-gpx-r-leaflet.html&#34;&gt;blog post&lt;/a&gt; that he published last year. The map uses R htmlwidgets that provide access to the Javascript tool Leaflet. The trick is that I don’t have to know very much about either htmlwidgets or Leaflet to make this work.&lt;/p&gt;
