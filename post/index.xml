@@ -22,9 +22,10 @@
 
 &lt;p&gt;One motivation for creating this blog was to display a portfolio of projects that I have worked
 on in the last year or so. I&amp;rsquo;ll list projects here.
-Eventually I hope to create pages that elaborate each project.&lt;/p&gt;
+The plan is that eventually I will add pages that elaborate each project. I hope that publishing
+my projects on this site will nudge me to be a bit more systematic as I execute projects.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-diary-of-samuel-pepys&#34;&gt;The Diary of Samuel Pepys&lt;/h3&gt;
+&lt;h3 id=&#34;the-diary-of-samuel-pepys-https-goldin-shinyapps-io-search-pepys&#34;&gt;&lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;Each morning I read an entry from
 &lt;a href=&#34;http://www.pepysdiary.com/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt; at a wonderful
@@ -34,7 +35,8 @@ Inspired by a post by
 I did some simple
 text processing on the diary. That became the
 occasion for my first shot at creating a Shiny app.
-The result is available &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+The resulting web page is available &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;here&lt;/a&gt;. The code to
+create this web page is available on a &lt;a href=&#34;https://github.com/johngoldin/pepys-diary&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I had an opportunity to chat with Julia at the RStudio Conference in Orlando. She gave me some suggestions
 for some additional things I might do with the diary.&lt;/p&gt;
@@ -52,7 +54,36 @@ The result is a Shiny app &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34
 I don&amp;rsquo;t thnk this is of great interest to a stranger, but for me it is a fascinating
 picture of my walks. I love to zoom in and see the detail of the map combined with the GPS trace and the photos.
 Like a good souvenir, it triggers lots of memories. If I lingered on a bench additional squiggles appear
-on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.&lt;/p&gt;
+on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.
+The code for the sourvenir walks site is available at a &lt;a href=&#34;https://github.com/johngoldin/Visualizing-Hiking&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;connecticut-data-by-town&#34;&gt;Connecticut Data by Town&lt;/h3&gt;
+
+&lt;p&gt;I did somse exploring to see what kind of data I could find and then created some maps via ggplot2 to display some of that data.&lt;/p&gt;
+
+&lt;h3 id=&#34;census-data-http-rpubs-com-johngoldin-196744&#34;&gt;&lt;a href=&#34;http://rpubs.com/JohnGoldin/196744&#34;&gt;Census Data&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;There is an &lt;a href=&#34;http://cran.r-project.org/web/packages/acs/index.html&#34;&gt;acs package&lt;/a&gt; to access US Census data.
+I did a little bit of exploration to see whether I could create maps of New Haven County based on Census data.
+Finding the right Census table turned out to be more of a trick than I expected. &lt;a href=&#34;http://rpubs.com/JohnGoldin/196744&#34;&gt;Here&lt;/a&gt; is a plot of New Haven County published to RPubs.&lt;/p&gt;
+
+&lt;p&gt;As I was writing
+this summary I found &lt;a href=&#34;http://www.arilamstein.com/blog/2015/11/16/search-census-data-r/&#34;&gt;this blog post&lt;/a&gt;
+that might help. I may get back to that later.&lt;/p&gt;
+
+&lt;h3 id=&#34;an-implementation-of-narcissism-in-r&#34;&gt;An Implementation of Narcissism in R&lt;/h3&gt;
+
+&lt;p&gt;Sometimes I just want to play around plotting some data. What data could be more interesting than data about me?
+It so happens I have a data series of my daily weight spanning more than 20 years. That&amp;rsquo;s not weird, is it. So I did some charts.&lt;/p&gt;
+
+&lt;h3 id=&#34;jai-alai&#34;&gt;Jai Alai&lt;/h3&gt;
+
+&lt;p&gt;Last but not least is jai alai. Back when I was in graduate school, there were two jai alai frontons in Connecticut, Milford and Bridgeport. Actually at one point there was also a third fronton in Hartford.
+There are some unique features to the way betting on jai alai is organized that makes it a bit
+tricky to analyze. Back then that seemed more interesting than working on my dissertaton. That period of my
+life is long past, but the lure of procrastination is still present. So on serveral occasions I have
+plunged back into jai alai. Jai alai was one of the first R projects I worked on after I retired. Recently
+I spent another month of my life on jai alai.&lt;/p&gt;
 </description>
     </item>
     
