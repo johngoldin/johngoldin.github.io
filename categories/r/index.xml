@@ -54,7 +54,7 @@ I don&amp;rsquo;t thnk this is of great interest to a stranger, but for me it is
 picture of my walks. I love to zoom in and see the detail of the map combined with the GPS trace and the photos.
 Like a good souvenir, it triggers lots of memories. If I lingered on a bench additional squiggles appear
 on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.
-The code for the sourvenir walks site is available at a &lt;a href=&#34;https://github.com/johngoldin/Visualizing-Hiking&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+The code for the sourvenir walks site is available at a &lt;a href=&#34;https://github.com/johngoldin/Visualizing-Hiking&#34;&gt;GitHub repository&lt;/a&gt;. There are also some &lt;a href=&#34;../../2016/06/28/technical-note--shiny-souvenir-map-of-walks/&#34;&gt;technical notes&lt;/a&gt; and some details on &lt;a href=&#34;../../2016/07/03/using-the-flickr-api-from-r/&#34;&gt;Flickr from R&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;connecticut-data-by-town&#34;&gt;Connecticut Data by Town&lt;/h3&gt;
 
