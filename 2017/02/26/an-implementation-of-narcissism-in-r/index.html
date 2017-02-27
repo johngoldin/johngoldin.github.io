@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>An Implementation of Narcissism in R &middot; John Goldin</title>
+
+  
+  <link rel="stylesheet" href="../../../../css/poole.css">
+  <link rel="stylesheet" href="../../../../css/hyde.css">
+  <link rel="stylesheet" href="../../../../css/poole-overrides.css">
+  <link rel="stylesheet" href="../../../../css/hyde-overrides.css">
+  <link rel="stylesheet" href="../../../../css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../touch-icon-144-precomposed.png">
+  <link href="../../../../favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92008736-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+
+
+
+</head>
+<body class="theme-base-08">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+    	
+      
+        <img src="https://www.gravatar.com/avatar/f7dd8b52bc092b4e50e9324381b02d67?s=200"
+             alt="gravatar" title="Can I Blog Too" >
+      
+      <h1>Can I Blog Too</h1>
+      <p class="lead">Notes on this and that&hellip;</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="../../../../">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="../../../../about/">About</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://www.flickr.com/photos/99418994@N00/">Flickr</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://github.com/johngoldin">GitHub</a></li>
+      
+      <li class="sidebar-nav-item"><a href="../../../../2017/02/11/how-i-set-up-this-site/">How I Set Up This Site</a></li>
+      
+      <li class="sidebar-nav-item"><a href="../../../../2017/02/17/portfolio-of-projects/">Portfolio of Projects</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://twitter.com/johngoldin">Twitter</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </li>
+    </ul>
+    
+    <p>Copyright &copy; 2017 <a href="../../../../license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">An Implementation of Narcissism in R</h1>
+    <span class="post-date">Feb 26, 2017 &middot; <a href="../../../../2017/02/26/an-implementation-of-narcissism-in-r/#disqus_thread">Comments</a>
+    
+    <br/>
+    
+    </span>
+
+
+
+<p>This post is more an <em>example</em> of narcissism, but <em>implementation</em> has a nice technical ring to it.</p>
+<p><em>Narcissism</em> hasn’t been a word in my every-day vocabulary, although it has been in the news with greater frequency lately. We have seen a lot of discussions recently about <a href="https://www.theatlantic.com/magazine/archive/2016/06/the-mind-of-donald-trump/480771/">narcissistic personality disorder</a>, but that is not what I am talking about here. At least I hope not, because I’m talking about me.</p>
+<p>Here’s the definition that fits this post:<br />
+<a href="http://www.dictionary.com/browse/narcissism">Narcissism</a> noun<br />
+1. inordinate fascination with oneself; excessive self-love; vanity. Synonyms: self-centeredness, smugness, egocentrism.</p>
+<p>So “inordinate fascination with oneself” may be a good characterization of the datasets presented here. I don’t think “excessive self-love” or “vanity” have much to do with it.</p>
+<div id="a-twenty-year-history-of-my-weight" class="section level3">
+<h3>A Twenty Year History of My Weight</h3>
+<p>For the last twenty-one years I have been recording my weight almost every single morning. I try to follow a consistent protocol. I’m in my pajamas before I go downstairs for tea and breakfast. It’s a more stable and reliable measure of weight than what is recorded in my doctor’s office. I have owned three scales during the twenty-one year period. The first one was analog and I wrote down my weight to the nearest pound. When I got a dgital scale in 2004, I used both scales for a period of time and adjusted the measurements from the analog scale according to the average difference from the digital scale. In short, I was serious about trying to establish a reliable measurement over time.</p>
+<p>Is it weird or creepy to publish this data series on the internet? I’ll say some more about that at the bottom of the post. For now, bring on the data.</p>
+<p>The R code used to plot this weight history isn’t terribly interesting, but I’ll show my work anyway. First I am showing the weight by day.</p>
+<pre class="r"><code>suppressPackageStartupMessages(
+  library(tidyverse))
+## Conflicts with tidy packages ----------------------------------------------
+# tidyverse loads these packages:
+# Loading tidyverse: ggplot2
+# Loading tidyverse: tibble
+# Loading tidyverse: tidyr
+# Loading tidyverse: readr
+# Loading tidyverse: purrr
+# Loading tidyverse: dplyr
+suppressPackageStartupMessages(library(stringr))    # for processing strings
+suppressPackageStartupMessages(library(lubridate))  # for dates</code></pre>
+<pre class="r"><code>if (str_detect(getwd(), &quot;johng&quot;)) {
+    fp &lt;- file.path(&quot;/Users&quot;, &quot;johng&quot;, &quot;Dropbox&quot;, &quot;Programming&quot;,&quot;R_Stuff&quot;, &quot;John Vitals&quot;,&quot;john weight.csv&quot;)
+} else {
+        fp &lt;- file.path(&quot;/Users&quot;, &quot;john_imac&quot;, &quot;Dropbox&quot;, &quot;Programming&quot;,&quot;R_Stuff&quot;, &quot;John Vitals&quot;,&quot;john weight.csv&quot;)}
+weight_data&lt;-read_csv(fp, col_types = cols(
+     date = col_date(&quot;%m/%d/%Y&quot;)))
+
+weight_data$month &lt;- month(weight_data$date, label = TRUE)
+weight_data$weight &lt;- ifelse(is.na(weight_data$adjusted), weight_data$raw, weight_data$adjusted)
+# in 2004 I started entering data without decimals to save time, so 1746 is 174.6
+# Next line converts the numbers that are so large they must be four digits without decimal:
+weight_data$weight &lt;- ifelse(weight_data$weight &gt; 250, weight_data$weight / 10, weight_data$weight)
+weight_data$year &lt;- factor(year(weight_data$date)) # I&#39;ll use this for the second chart
+
+# get average weight by month
+weight_data$mid_month &lt;- floor_date(weight_data$date, unit = &quot;month&quot;) + days(14)
+wtm &lt;- group_by(weight_data, mid_month, month) %&gt;% summarise(weight = mean(weight, na.rm = TRUE))
+wtm2 &lt;- filter(wtm, year(mid_month) &gt; 1996) # weight by month, but without partial 1996
+byday &lt;- ggplot(data = weight_data, aes(x = date, y = weight)) + scale_x_date(date_breaks = &quot;5 years&quot;, date_minor_breaks = &quot;1 year&quot;)
+#  put the gray regression line first so that it is underneath the points and the other loess smoothed line.
+byday &lt;- byday + geom_smooth(method = &quot;lm&quot;, se = FALSE, data = wtm2, aes(x = mid_month), colour = &quot;darkgray&quot;, size = 1.5)
+byday &lt;- byday + geom_point(size = 0.5) +  geom_smooth(data = wtm, aes(x = mid_month), span = 0.07)
+byday &lt;- byday + ggtitle(&quot;One Individual&#39;s Daily Weight During a Twenty-one Year Span&quot;) + ylab(&quot;weight (pounds)&quot;)</code></pre>
+<p><img src="figures/byday-1.png" width="672" /></p>
+</div>
+<div id="weight-gain-by-year" class="section level3">
+<h3>Weight Gain by Year</h3>
+<p>For a somewhat glib discussion of weight gain by year, see Wonkblog <a href="https://www.washingtonpost.com/news/wonk/wp/2016/01/29/the-age-when-you-gain-the-most-weight/?utm_term=.082bca258fcb">Look at how much weight you are going to gain</a>. The article says the expected gain is between 0.5 and 1.5 pounds per year. The straight dark gray line on my weight chart is the regressioin line through the monthly data, but without the bit at the left end in 1996. The slope is about 1.4 pounds per year.</p>
+<div id="national-statistics-on-weight-by-age" class="section level4">
+<h4>National Statistics on Weight by Age</h4>
+What do we know about weight by age in the general population? One source is the <a href="https://wwwn.cdc.gov/nchs/nhanes/ContinuousNhanes/Questionnaires.aspx?BeginYear=2015">National Health and Nutrition Examination Survey</a> or <strong>NHANES</strong>. (There is a summary report for <a href="https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf">Anthropometric Reference Data</a> that includes weight.) That is the source for the Wonkblog referred to above. It also seems to be the source for these charts (for white women and men) which were compiled at <a href="http://halls.md/average-height-weight-charts/">Dr. Halls</a> website, which does not exactly reek of credibility.
+<p>
+<img src="http://halls.md/chart/WomenWeightWhite.gif" style="width: 360px; max-width: 100%"/> <img src="http://halls.md/chart/MenWeightWhite.gif" style="width: 360px; max-width: 100%"/>
+</p>
+<p>For white mails, it shows weight peeking between 50 and 55 and then beginning to decline with age. Maybe. I was born in 1950 so I turned 55 in 2005. My personal peek seems to have been in the vicinity of 62. Maybe my slightly lower weight during the last two years is just another side effect of growing older. But it’s a bit problematic to use cross-sectional data like this as a longitudinal norm. We hear a lot about “the obesity epidemic” so maybe the 55-year old people in this chart will keep going up or stay the same as they get older. Maybe the peek is near 55 as a result of the “obesity epidemic” moving through the age distribution. I don’t know. The turndown after the peak may be only indirectly related to age. Almost any illness or medical problem is increases with age. Maybe age leads to illness and illness leads to weight loss. In my case, illness is not a factor.</p>
+<p>The CDC NHANES survey seems to be done annually so it would be possible to look at the change in the distribution over time. They have data sets for the <a href="https://wwwn.cdc.gov/nchs/nhanes/Search/DataPage.aspx?Component=Examination">National Health and Nutrition Examination Survey</a> year by year from 1999 to 2013.</p>
+<p>I confess I’m not sufficiently interested in the issue of weight and age to dig in and try to get all that sorted out. Maybe I’ll come back to this. Were I to get interested, there is quite a bit of raw data available from NHANES for download as XPT files, which I see is the SAS data transport format. As usual, <a href="https://github.com/hadley">Hadley</a> is one step ahead of me and the latest version of <a href="https://github.com/tidyverse/haven/blob/master/NEWS.md">haven 1.0.0.9</a> (which is not yet up on <a href="https://cran.r-project.org/">CRAN</a>) adds <code>read_xpt</code> as a command to read XPT SAS transport datasets. Maybe I’ll try that at some point, but in the meantime I want to press ahead with my more self-centered (or should I say <em>narcissistic</em>) exploraton of my personal body statistics.</p>
+</div>
+</div>
+<div id="seasonal-variation-in-weight" class="section level3">
+<h3>Seasonal Variation in Weight</h3>
+<p>In the chart above showing my daily weight, I adjusted the “span” arguement to <code>geom_smooth</code> so that the smoothed curve shows seasonal patterns fairly clearly. (If the span parameter was smaller, I would get more bounding around within years. If it were larger, the curve would emphasize multi-year trends.)</p>
+<p>First I will redo the chart in a way that emphasizes the pattern within years.</p>
+<pre class="r"><code>wtm$year &lt;- year(wtm$mid_month)
+weight_data$year &lt;- year(weight_data$mid_month)
+weight_data$month_with_fraction &lt;- month(weight_data$mid_month) + ((day(weight_data$date) - day(weight_data$mid_month)) / 31)
+pmonth &lt;- ggplot(data = wtm, aes(x = month(mid_month), y = weight))
+pmonth &lt;- pmonth + geom_point(data = subset(weight_data, !is.na(weight)), size = 0.05, aes(x = month_with_fraction)) + facet_wrap(~year, nrow = 1) + geom_smooth(na.rm = TRUE, se = FALSE) +
+  scale_x_continuous(breaks = seq(1, 12, 4), minor_breaks = seq(1, 12, 1)) +
+  ggtitle(&quot;Weight by Year&quot;) + ylab(&quot;Weight&quot;) + xlab(&quot;Month&quot;)
+plot(pmonth)
+## `geom_smooth()` using method = &#39;loess&#39;
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : span too small. fewer data values than degrees of freedom.
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : at 0.995
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : radius 2.5e-05
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : all data on boundary of neighborhood. make span bigger
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : pseudoinverse used at 0.995
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : neighborhood radius 0.005
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : reciprocal condition number 1
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : at 2.005
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : radius 2.5e-05
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : all data on boundary of neighborhood. make span bigger
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : There are other near singularities as well. 2.5e-05
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : zero-width neighborhood. make span bigger
+
+## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+## parametric, : zero-width neighborhood. make span bigger
+## Warning: Computation failed in `stat_smooth()`:
+## NA/NaN/Inf in foreign function call (arg 5)</code></pre>
+<p><img src="figures/byyear-1.png" width="960" /> You can see that for most years there is an <em>N</em> shaped pattern. In January weight is still headed up and reaches its peak later in the winter. The trough happens at the end of the summer. It starts back up and continues higher through the end of the year. Basically it is high in early spring and low in early fall. It shows up as an <em>N</em> in this chart because the annual boundary between January and December interrupts the pattern.</p>
+<p>I would guess that seasonal adjustment would be a big topic in econometrics. I don’t know much about. But of course there is an R package called <a href="https://cran.r-project.org/web/packages/seasonal/">seasonal</a>.</p>
+</div>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "johngoldin";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "johngoldin";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</body>
+</html>
+
