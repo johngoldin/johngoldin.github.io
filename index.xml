@@ -26,19 +26,18 @@
 &lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;This post is more an &lt;em&gt;example&lt;/em&gt; of narcissism, but &lt;em&gt;implementation&lt;/em&gt; has a nice technical ring to it.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Narcissism&lt;/em&gt; hasn’t been a word in my every-day vocabulary, although it has been in the news with greater frequency lately. We have seen a lot of discussions recently about &lt;a href=&#34;https://www.theatlantic.com/magazine/archive/2016/06/the-mind-of-donald-trump/480771/&#34;&gt;narcissistic personality disorder&lt;/a&gt;, but that is not what I am talking about here. At least I hope not, because I’m talking about me.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Narcissism&lt;/em&gt; hasn’t been part of my every-day vocabulary, although it has been in the news recently. Lately we have been seeing discussions about &lt;a href=&#34;https://www.theatlantic.com/magazine/archive/2016/06/the-mind-of-donald-trump/480771/&#34;&gt;narcissistic personality disorder&lt;/a&gt;, but that is not what I am talking about here. At least I hope not, because I’m talking about me.&lt;/p&gt;
 &lt;p&gt;Here’s the definition that fits this post:&lt;br /&gt;
 &lt;a href=&#34;http://www.dictionary.com/browse/narcissism&#34;&gt;Narcissism&lt;/a&gt; noun&lt;br /&gt;
 1. inordinate fascination with oneself; excessive self-love; vanity. Synonyms: self-centeredness, smugness, egocentrism.&lt;/p&gt;
 &lt;p&gt;So “inordinate fascination with oneself” may be a good characterization of the datasets presented here. I don’t think “excessive self-love” or “vanity” have much to do with it.&lt;/p&gt;
 &lt;div id=&#34;a-twenty-year-history-of-my-weight&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;A Twenty Year History of My Weight&lt;/h3&gt;
-&lt;p&gt;For the last twenty-one years I have been recording my weight almost every single morning. I try to follow a consistent protocol. I’m in my pajamas before I go downstairs for tea and breakfast. It’s a more stable and reliable measure of weight than what is recorded in my doctor’s office. I have owned three scales during the twenty-one year period. The first one was analog and I wrote down my weight to the nearest pound. When I got a dgital scale in 2004, I used both scales for a period of time and adjusted the measurements from the analog scale according to the average difference from the digital scale. In short, I was serious about trying to establish a reliable measurement over time.&lt;/p&gt;
-&lt;p&gt;Is it weird or creepy to publish this data series on the internet? I’ll say some more about that at the bottom of the post. For now, bring on the data.&lt;/p&gt;
+&lt;p&gt;For the last twenty-one years I have been recording my weight almost every single morning. I ry to follow a consistent protocol. I’m in my pajamas before I go downstairs for tea and breakfast. It’s a more stable and reliable measure of weight than what is recorded in my doctor’s office. I have owned three scales during the twenty-one year period. The first one was analog and I wrote down my weight to the nearest pound. When I got a dgital scale in 2004, I used both scales for a period of time and adjusted the measurements from the analog scale according to the average difference from the digital scale. In short, I was serious about trying to establish a reliable measurement over time.&lt;/p&gt;
+&lt;p&gt;Is it weird or creepy to publish this data series on the internet? I’ll say some more about that at the &lt;a href=&#34;#is-this-creepy&#34;&gt;bottom of the post&lt;/a&gt;. For now, bring on the data.&lt;/p&gt;
 &lt;p&gt;The R code used to plot this weight history isn’t terribly interesting, but I’ll show my work anyway. First I am showing the weight by day.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages(
   library(tidyverse))
-## Conflicts with tidy packages ----------------------------------------------
 # tidyverse loads these packages:
 # Loading tidyverse: ggplot2
 # Loading tidyverse: tibble
@@ -48,89 +47,137 @@
 # Loading tidyverse: dplyr
 suppressPackageStartupMessages(library(stringr))    # for processing strings
 suppressPackageStartupMessages(library(lubridate))  # for dates&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (str_detect(getwd(), &amp;quot;johng&amp;quot;)) {
-    fp &amp;lt;- file.path(&amp;quot;/Users&amp;quot;, &amp;quot;johng&amp;quot;, &amp;quot;Dropbox&amp;quot;, &amp;quot;Programming&amp;quot;,&amp;quot;R_Stuff&amp;quot;, &amp;quot;John Vitals&amp;quot;,&amp;quot;john weight.csv&amp;quot;)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# I was having trouble getting root.dir knitr parameter to work,
+# so I am hard coding a path to my data.
+if (str_detect(getwd(), &amp;quot;johng&amp;quot;)) {
+    fp &amp;lt;- file.path(&amp;quot;/Users&amp;quot;, &amp;quot;johng&amp;quot;, &amp;quot;Dropbox&amp;quot;, &amp;quot;Programming&amp;quot;,
+                                    &amp;quot;R_Stuff&amp;quot;, &amp;quot;John Vitals&amp;quot;,&amp;quot;john weight.csv&amp;quot;)
 } else {
-        fp &amp;lt;- file.path(&amp;quot;/Users&amp;quot;, &amp;quot;john_imac&amp;quot;, &amp;quot;Dropbox&amp;quot;, &amp;quot;Programming&amp;quot;,&amp;quot;R_Stuff&amp;quot;, &amp;quot;John Vitals&amp;quot;,&amp;quot;john weight.csv&amp;quot;)}
-weight_data&amp;lt;-read_csv(fp, col_types = cols(
+        fp &amp;lt;- file.path(&amp;quot;/Users&amp;quot;, &amp;quot;john_imac&amp;quot;, &amp;quot;Dropbox&amp;quot;, &amp;quot;Programming&amp;quot;,
+                                        &amp;quot;R_Stuff&amp;quot;, &amp;quot;John Vitals&amp;quot;,&amp;quot;john weight.csv&amp;quot;)}
+weight_data &amp;lt;- read_csv(fp, col_types = cols(
      date = col_date(&amp;quot;%m/%d/%Y&amp;quot;)))
 
 weight_data$month &amp;lt;- month(weight_data$date, label = TRUE)
-weight_data$weight &amp;lt;- ifelse(is.na(weight_data$adjusted), weight_data$raw, weight_data$adjusted)
-# in 2004 I started entering data without decimals to save time, so 1746 is 174.6
-# Next line converts the numbers that are so large they must be four digits without decimal:
-weight_data$weight &amp;lt;- ifelse(weight_data$weight &amp;gt; 250, weight_data$weight / 10, weight_data$weight)
-weight_data$year &amp;lt;- factor(year(weight_data$date)) # I&amp;#39;ll use this for the second chart
+weight_data$weight &amp;lt;- ifelse(is.na(weight_data$adjusted), 
+                                                         weight_data$raw, 
+                                                         weight_data$adjusted)
+# in 2004 I started entering data without decimals to save time, 
+# so 1746 is 174.6 
+# Next line converts the numbers that are so large they must be four
+# digits without decimal:
+weight_data$weight &amp;lt;- ifelse(weight_data$weight &amp;gt; 250, 
+                                                         weight_data$weight / 10, 
+                                                         weight_data$weight)
+weight_data$year &amp;lt;- factor(year(weight_data$date)) 
 
 # get average weight by month
-weight_data$mid_month &amp;lt;- floor_date(weight_data$date, unit = &amp;quot;month&amp;quot;) + days(14)
-wtm &amp;lt;- group_by(weight_data, mid_month, month) %&amp;gt;% summarise(weight = mean(weight, na.rm = TRUE))
-wtm2 &amp;lt;- filter(wtm, year(mid_month) &amp;gt; 1996) # weight by month, but without partial 1996
-byday &amp;lt;- ggplot(data = weight_data, aes(x = date, y = weight)) + scale_x_date(date_breaks = &amp;quot;5 years&amp;quot;, date_minor_breaks = &amp;quot;1 year&amp;quot;)
-#  put the gray regression line first so that it is underneath the points and the other loess smoothed line.
-byday &amp;lt;- byday + geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE, data = wtm2, aes(x = mid_month), colour = &amp;quot;darkgray&amp;quot;, size = 1.5)
-byday &amp;lt;- byday + geom_point(size = 0.5) +  geom_smooth(data = wtm, aes(x = mid_month), span = 0.07)
-byday &amp;lt;- byday + ggtitle(&amp;quot;One Individual&amp;#39;s Daily Weight During a Twenty-one Year Span&amp;quot;) + ylab(&amp;quot;weight (pounds)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/byday-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+weight_data$mid_month &amp;lt;- 
+    floor_date(weight_data$date, unit = &amp;quot;month&amp;quot;) + 
+    days(14)
+wtm &amp;lt;- group_by(weight_data, mid_month, month) %&amp;gt;% 
+    summarise(weight = mean(weight, na.rm = TRUE))
+# weight by month, but without partial 1996
+wtm2 &amp;lt;- filter(wtm, year(mid_month) &amp;gt; 1996) 
+byday &amp;lt;- ggplot(data = weight_data, 
+                                aes(x = date, y = weight)) + 
+    scale_x_date(date_breaks = &amp;quot;5 years&amp;quot;, 
+                             date_minor_breaks = &amp;quot;1 year&amp;quot;)
+#  put the gray regression line first so that it is underneath the 
+#  points and the other loess smoothed line.
+byday &amp;lt;- byday + geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE, 
+                                                         data = wtm2, 
+                                                         aes(x = mid_month), 
+                                                         colour = &amp;quot;darkgray&amp;quot;, size = 1.5)
+byday &amp;lt;- byday + geom_point(size = 0.5) +  
+    geom_smooth(data = wtm, aes(x = mid_month), span = 0.07)
+byday &amp;lt;- byday + 
+    ggtitle(&amp;quot;One Individual&amp;#39;s Daily Weight During a Twenty-one Year Span&amp;quot;) + 
+    ylab(&amp;quot;weight (pounds)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/byday-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;seasonal-variation-in-weight&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Seasonal Variation in Weight&lt;/h3&gt;
+&lt;p&gt;In the chart above showing my daily weight, I adjusted the “span” argument to &lt;code&gt;geom_smooth&lt;/code&gt; so that the smoothed curve shows seasonal patterns fairly clearly. (If the span parameter were smaller, I would get more bouncing around within years. If it were larger, the curve would emphasize multi-year trends.)&lt;/p&gt;
+&lt;p&gt;First I will redo the chart in a way that emphasizes the pattern within years.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wtm$year &amp;lt;- year(wtm$mid_month)
+weight_data$year &amp;lt;- year(weight_data$mid_month)
+weight_data$month_with_fraction &amp;lt;- month(weight_data$mid_month) + ((day(weight_data$date) - day(weight_data$mid_month)) / 31)
+pmonth &amp;lt;- ggplot(data = wtm, 
+                                 aes(x = month(mid_month), y = weight))
+pmonth &amp;lt;- pmonth + geom_point(data = 
+                                                                subset(weight_data, 
+                                                                             !is.na(weight)), 
+                                                            size = 0.05, 
+                                                            aes(x = month_with_fraction)) +
+    facet_wrap(~year, nrow = 1) + 
+    geom_smooth(na.rm = TRUE, se = FALSE) +
+  scale_x_continuous(breaks = seq(1, 12, 4), 
+                                     minor_breaks = seq(1, 12, 1)) +
+  ggtitle(&amp;quot;Weight by Year&amp;quot;) + ylab(&amp;quot;Weight&amp;quot;) + xlab(&amp;quot;Month&amp;quot;)
+plot(pmonth)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/byyear-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can see that for most years there is an &lt;em&gt;N&lt;/em&gt; shaped pattern. In January weight is still headed up and reaches its peak later in the winter. The trough happens at the end of the summer. It starts back up and continues higher through the end of the year. Basically it is high in early spring and low in early fall. It shows up as an &lt;em&gt;N&lt;/em&gt; in this chart because the annual boundary between January and December interrupts the pattern.&lt;/p&gt;
+&lt;p&gt;I would guess that seasonal adjustment would be a big topic in econometrics. I don’t know much about that. But of course there is an R package called &lt;a href=&#34;https://cran.r-project.org/web/packages/seasonal/&#34;&gt;seasonal&lt;/a&gt; and another package called &lt;a href=&#34;https://cran.r-project.org/web/packages/seasonal/&#34;&gt;season&lt;/a&gt;. I looked at &lt;code&gt;season&lt;/code&gt; quickly. Neither package seemed helpful in my immediate case, so I went back to something more basic.&lt;/p&gt;
+&lt;p&gt;Looking at the previous figure, some years do not seem to fit the ususal seasonal pattern. I decided to remove years 2005, 2006, and 2008. That’s a bit arbitrary, but probably harmless. For the remaining years, I calculated the mean weight for each month and then subtracted the overall mean for the corresponding year. In other words, I looked at the difference between month average and annual average.&lt;/p&gt;
+&lt;p&gt;Next I plotted the monthly variation from the annual mean.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;year_average &amp;lt;- wtm2 %&amp;gt;% mutate(year = year(mid_month)) %&amp;gt;% group_by(year) %&amp;gt;%
+    summarise(year_avg = mean(weight, na.rm = TRUE)) %&amp;gt;%
+    select(year, year_avg)
+month_differential &amp;lt;- wtm2 %&amp;gt;% mutate(year = year(mid_month)) %&amp;gt;% 
+  filter(!(year %in% c(2005, 2006, 2008))) %&amp;gt;%
+  left_join(year_average, by = c(&amp;quot;year&amp;quot;)) %&amp;gt;% 
+    mutate(dif = weight - year_avg) 
+print(names(month_differential))
+## [1] &amp;quot;mid_month&amp;quot; &amp;quot;month&amp;quot;     &amp;quot;weight&amp;quot;    &amp;quot;year&amp;quot;      &amp;quot;year_avg&amp;quot;  &amp;quot;dif&amp;quot;
+p &amp;lt;- ggplot(data = month_differential, aes(x = month, y = dif))
+# p &amp;lt;- p + geom_line(aes(group = year), colour = &amp;quot;lightgray&amp;quot;)
+p &amp;lt;- p + geom_point() + 
+    labs(y = &amp;quot;Difference from Annual Mean&amp;quot;, 
+             x = &amp;quot;&amp;quot;, 
+             title = &amp;quot;Monthly Variation from Annual Mean&amp;quot;)
+p &amp;lt;- p + geom_smooth(aes(x = as.numeric(month)))
+p &amp;lt;- p + scale_y_continuous(breaks = seq(-4, 4, 2))
+plot(p)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/seasonal-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The moral of this story from my point of view is that I should pay attention to the seasonal variation when I am ready to be complacent because my weight seems to be going down in August. As I write this, it is the beginning of March. My weight has been creeping up. I should watch what I eat because I have a couple of months to go of potential seasonal increase in weight.&lt;/p&gt;
+&lt;p&gt;Note that because the plot runs from January to December, it makes it hard to notice that the mean differential in January is lower than either December or February. There’s an odd dip in January. I don’t have an explanation for this. Perhaps it’s more of a story of December be anomalously high than of January being anomalously low. But this is a minor detail.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;weight-gain-by-year&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Weight Gain by Year&lt;/h3&gt;
+&lt;p&gt;Am I getting fat? That is a question that has popped into my head from time to time over the years, especially after I increased the waist size for my pants.&lt;/p&gt;
 &lt;p&gt;For a somewhat glib discussion of weight gain by year, see Wonkblog &lt;a href=&#34;https://www.washingtonpost.com/news/wonk/wp/2016/01/29/the-age-when-you-gain-the-most-weight/?utm_term=.082bca258fcb&#34;&gt;Look at how much weight you are going to gain&lt;/a&gt;. The article says the expected gain is between 0.5 and 1.5 pounds per year. The straight dark gray line on my weight chart is the regressioin line through the monthly data, but without the bit at the left end in 1996. The slope is about 1.4 pounds per year.&lt;/p&gt;
 &lt;div id=&#34;national-statistics-on-weight-by-age&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;National Statistics on Weight by Age&lt;/h4&gt;
 What do we know about weight by age in the general population? One source is the &lt;a href=&#34;https://wwwn.cdc.gov/nchs/nhanes/ContinuousNhanes/Questionnaires.aspx?BeginYear=2015&#34;&gt;National Health and Nutrition Examination Survey&lt;/a&gt; or &lt;strong&gt;NHANES&lt;/strong&gt;. (There is a summary report for &lt;a href=&#34;https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf&#34;&gt;Anthropometric Reference Data&lt;/a&gt; that includes weight.) That is the source for the Wonkblog referred to above. It also seems to be the source for these charts (for white women and men) which were compiled at &lt;a href=&#34;http://halls.md/average-height-weight-charts/&#34;&gt;Dr. Halls&lt;/a&gt; website, which does not exactly reek of credibility.
 &lt;p&gt;
-&lt;img src=&#34;http://halls.md/chart/WomenWeightWhite.gif&#34; style=&#34;width: 360px; max-width: 100%&#34;/&gt; &lt;img src=&#34;http://halls.md/chart/MenWeightWhite.gif&#34; style=&#34;width: 360px; max-width: 100%&#34;/&gt;
-&lt;/p&gt;
-&lt;p&gt;For white mails, it shows weight peeking between 50 and 55 and then beginning to decline with age. Maybe. I was born in 1950 so I turned 55 in 2005. My personal peek seems to have been in the vicinity of 62. Maybe my slightly lower weight during the last two years is just another side effect of growing older. But it’s a bit problematic to use cross-sectional data like this as a longitudinal norm. We hear a lot about “the obesity epidemic” so maybe the 55-year old people in this chart will keep going up or stay the same as they get older. Maybe the peek is near 55 as a result of the “obesity epidemic” moving through the age distribution. I don’t know. The turndown after the peak may be only indirectly related to age. Almost any illness or medical problem is increases with age. Maybe age leads to illness and illness leads to weight loss. In my case, illness is not a factor.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://halls.md/chart/WomenWeightWhite.gif&#34; style=&#34;width: 360px; max-width: 100%&#34;/&gt; &lt;img src=&#34;http://halls.md/chart/MenWeightWhite.gif&#34; style=&#34;width: 360px; max-width: 100%&#34;/&gt; For white males, it shows weight peeking between 50 and 55 and then beginning to decline with age. Maybe. I was born in 1950 so I turned 55 in 2005. My personal peek seems to have been in the vicinity of 62. Maybe my slightly lower weight during the last two years is just another side effect of growing older. But it’s a bit problematic to use cross-sectional data like this as a longitudinal norm. We hear a lot about “the obesity epidemic” so maybe the 55-year old people in this chart will keep going up or stay the same as they get older. Maybe the peek is near 55 as a result of the “obesity epidemic” moving through the age distribution. I don’t know. The turndown after the peak may be only indirectly related to age. Almost any illness or medical problem is increases with age. Maybe age leads to illness and illness leads to weight loss. In my case, illness is not a factor.&lt;/p&gt;
 &lt;p&gt;The CDC NHANES survey seems to be done annually so it would be possible to look at the change in the distribution over time. They have data sets for the &lt;a href=&#34;https://wwwn.cdc.gov/nchs/nhanes/Search/DataPage.aspx?Component=Examination&#34;&gt;National Health and Nutrition Examination Survey&lt;/a&gt; year by year from 1999 to 2013.&lt;/p&gt;
 &lt;p&gt;I confess I’m not sufficiently interested in the issue of weight and age to dig in and try to get all that sorted out. Maybe I’ll come back to this. Were I to get interested, there is quite a bit of raw data available from NHANES for download as XPT files, which I see is the SAS data transport format. As usual, &lt;a href=&#34;https://github.com/hadley&#34;&gt;Hadley&lt;/a&gt; is one step ahead of me and the latest version of &lt;a href=&#34;https://github.com/tidyverse/haven/blob/master/NEWS.md&#34;&gt;haven 1.0.0.9&lt;/a&gt; (which is not yet up on &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;CRAN&lt;/a&gt;) adds &lt;code&gt;read_xpt&lt;/code&gt; as a command to read XPT SAS transport datasets. Maybe I’ll try that at some point, but in the meantime I want to press ahead with my more self-centered (or should I say &lt;em&gt;narcissistic&lt;/em&gt;) exploraton of my personal body statistics.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;seasonal-variation-in-weight&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Seasonal Variation in Weight&lt;/h3&gt;
-&lt;p&gt;In the chart above showing my daily weight, I adjusted the “span” arguement to &lt;code&gt;geom_smooth&lt;/code&gt; so that the smoothed curve shows seasonal patterns fairly clearly. (If the span parameter was smaller, I would get more bounding around within years. If it were larger, the curve would emphasize multi-year trends.)&lt;/p&gt;
-&lt;p&gt;First I will redo the chart in a way that emphasizes the pattern within years.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wtm$year &amp;lt;- year(wtm$mid_month)
-weight_data$year &amp;lt;- year(weight_data$mid_month)
-weight_data$month_with_fraction &amp;lt;- month(weight_data$mid_month) + ((day(weight_data$date) - day(weight_data$mid_month)) / 31)
-pmonth &amp;lt;- ggplot(data = wtm, aes(x = month(mid_month), y = weight))
-pmonth &amp;lt;- pmonth + geom_point(data = subset(weight_data, !is.na(weight)), size = 0.05, aes(x = month_with_fraction)) + facet_wrap(~year, nrow = 1) + geom_smooth(na.rm = TRUE, se = FALSE) +
-  scale_x_continuous(breaks = seq(1, 12, 4), minor_breaks = seq(1, 12, 1)) +
-  ggtitle(&amp;quot;Weight by Year&amp;quot;) + ylab(&amp;quot;Weight&amp;quot;) + xlab(&amp;quot;Month&amp;quot;)
-plot(pmonth)
-## `geom_smooth()` using method = &amp;#39;loess&amp;#39;
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : span too small. fewer data values than degrees of freedom.
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : at 0.995
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : radius 2.5e-05
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : all data on boundary of neighborhood. make span bigger
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : pseudoinverse used at 0.995
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : neighborhood radius 0.005
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : reciprocal condition number 1
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : at 2.005
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : radius 2.5e-05
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : all data on boundary of neighborhood. make span bigger
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : There are other near singularities as well. 2.5e-05
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : zero-width neighborhood. make span bigger
-
-## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-## parametric, : zero-width neighborhood. make span bigger
-## Warning: Computation failed in `stat_smooth()`:
-## NA/NaN/Inf in foreign function call (arg 5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/byyear-1.png&#34; width=&#34;960&#34; /&gt; You can see that for most years there is an &lt;em&gt;N&lt;/em&gt; shaped pattern. In January weight is still headed up and reaches its peak later in the winter. The trough happens at the end of the summer. It starts back up and continues higher through the end of the year. Basically it is high in early spring and low in early fall. It shows up as an &lt;em&gt;N&lt;/em&gt; in this chart because the annual boundary between January and December interrupts the pattern.&lt;/p&gt;
-&lt;p&gt;I would guess that seasonal adjustment would be a big topic in econometrics. I don’t know much about. But of course there is an R package called &lt;a href=&#34;https://cran.r-project.org/web/packages/seasonal/&#34;&gt;seasonal&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;is-this-creepy&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Is this Creepy?&lt;/h3&gt;
+&lt;p&gt;I don’t think I am revealing any deep personal secrets by posting this data. On the other hand, it does seem a little weird. A couple of years after I started recording my weight every morning I read &lt;a href=&#34;http://www.goodreads.com/book/show/48858.Travels_With_My_Aunt&#34;&gt;&lt;em&gt;Travels With My Aunt&lt;/em&gt;&lt;/a&gt;, a very funny Graham Greene novel. Toward the end of the book the protoganist encounters a middle-aged CIA agent who does seem a bit creepy. And he also has become focused on self-measurement:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“I’ve never told anyone about this, Henry,” he said. “It would seem kind of funny to most people, I guess. The fact is I count while I’m pissing and then I write down how long I’ve taken and what time it is. Do you realize we spend more than one whole day a year pissing?”&lt;/p&gt;
+&lt;p&gt;“Good heavens,” I said.&lt;/p&gt;
+&lt;p&gt;“I can prove it, Henry. Look here.” He opened his notebook and showed me a page. His writing went something like this:&lt;/p&gt;
+&lt;p&gt;               July 28&lt;br /&gt;
+       7.15       0.41&lt;br /&gt;
+     10.45       0.37&lt;br /&gt;
+     12.30       0.50&lt;br /&gt;
+     13.15       0.32&lt;br /&gt;
+     13.40       0.50&lt;/p&gt;
+&lt;p&gt;[some detailed, and creepy, discussion of the details of the results appears here.]&lt;/p&gt;
+&lt;p&gt;“Are you drawing any conclusions?” I asked,&lt;/p&gt;
+&lt;p&gt;“That’s not my job,” he said. “I’m no expert. I just report the facts and any data–like the gins and the weather–that seem to have a bearing. It’s for others to drawthe conclusions.”&lt;/p&gt;
+&lt;p&gt;“Who are the others?”&lt;/p&gt;
+&lt;p&gt;“Well, I thought when I had completed six months’ research I’d get in touch with a urinary specialist You don’t know what he mightn’t be able to read into these figures. Those guys deal all the time with the sick. It’s important to them to know what happens in the case of an average fellow.”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.goodreads.com/book/show/48858.Travels_With_My_Aunt&#34;&gt;Travels With My Aunt&lt;/a&gt;. Graham Greene. Penguin Classics. Graham Greene Centennial Edition, pp. 190-191.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have often thought of this passage as I wrote down my weight each morning, recognizing I was doing something a bit odd. As I was composing this post, I went to the library and fetched a copy of &lt;em&gt;Travels with My Aunt&lt;/em&gt; and paged through it to find these lines. It was just as odd as I remembered it.&lt;/p&gt;
+&lt;p&gt;So am I drawing any conclusions from my data? In part I agree with the CIA agent. I’m just collecting raw data. Sometimes, like Graham Greene’s character, I imagine handing it off to some medical specialist who could make something out of it. Maybe. Or mayby not.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -197,7 +244,7 @@ Finding the right Census table turned out to be more of a trick than I expected.
 this summary I found &lt;a href=&#34;http://www.arilamstein.com/blog/2015/11/16/search-census-data-r/&#34;&gt;this blog post&lt;/a&gt;
 that might help. I may get back to that later.&lt;/p&gt;
 
-&lt;h3 id=&#34;an-implementation-of-narcissism-in-r&#34;&gt;An Implementation of Narcissism in R&lt;/h3&gt;
+&lt;h3 id=&#34;an-implementation-of-narcissism-in-r-hahahugoshortcode-3hbhb&#34;&gt;&lt;a href=&#34;./2017/02/26/an-implementation-of-narcissism-in-r/&#34;&gt;An Implementation of Narcissism in R&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;Sometimes I just want to play around plotting some data. What data could be more interesting than data about me?
 It so happens I have a data series of my daily weight spanning more than 20 years. That&amp;rsquo;s not weird, is it. So I did some charts.&lt;/p&gt;
