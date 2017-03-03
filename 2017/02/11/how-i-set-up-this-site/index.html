@@ -279,6 +279,37 @@ wasn&rsquo;t getting set. I moved things around and comments reappeared.</p>
 <p>This is typical of the blundering around I am doing with Hugo and themes.
 I guess it&rsquo;s a learning experience.</p>
 
+<h3 id="things-i-have-learned-since-i-first-posted-this">Things I Have Learned Since I First Posted This</h3>
+
+<h4 id="directory-structure">Directory Structure</h4>
+
+<p>If you follow my steps exactly as described here or the instructions at the <a href="https://github.com/rstudio/blogdown">RStudio blogdown readme</a>, you
+are likely to end up with a two-tiered directory structure. You create an
+RStudio project for your site (the top level) and then when you run <code>blogdown::new_site()</code> you create a new directory within that project
+directory. That didn&rsquo;t seem right to me, so behind the scenes I &ldquo;fixed&rdquo; that
+and flattened things so that my hugo site directory was the same as my RStudio project.
+Since then, I&rsquo;ve decided there is probably some advantage in keeping
+the hugo site as a separate directory inside the project directory. It&rsquo;s not
+a big deal, but having two levels gives you a place to put additional related
+material that is not directly related to your web site. As of now I have &ldquo;flat&rdquo; one-directory structure for my blogdown site. But if you
+follow the description in this post and end up with a two-level structure,
+keep it.</p>
+
+<h4 id="how-to-manage-an-rmarkdown-post">How To Manage an RMarkdown Post</h4>
+
+<p>I finally did my first RMarkdown post. As is likely to be the case,
+it is derived from a separate RStudio project. How should I deal with the
+working directory? The RMarkdown file is in my Hugo blogdown project. But
+the data file I need for my work is in the original project directory.
+At first I thought I should change the working directory with <code>setwd()</code>,
+but I wondered about what side effects that might produce.
+A <a href="http://stackoverflow.com/questions/20060518/in-rstudio-rmarkdown-how-to-setwd">post on Stack Overflow</a> steered me away from <code>setwd()</code>.
+I now know I should use something like <code>knitr::opts_knit$set(root.dir = '../myproject')</code>. I have been having some trouble with that,
+presumably because of the <code>..</code> notation to go up a directory, but
+I haven&rsquo;t taken the time yet to case that at. Being impatient I cut
+corners and sort of hardcoded the file reference in my Rmd file. I&rsquo;ll go back
+and fix that once I figure out the <code>root.dir</code> parameter.</p>
+
   </div>
   <div id="disqus_thread"></div>
 </div>
