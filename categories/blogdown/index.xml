@@ -219,7 +219,7 @@ but I wondered about what side effects that might produce.
 A &lt;a href=&#34;http://stackoverflow.com/questions/20060518/in-rstudio-rmarkdown-how-to-setwd&#34;&gt;post on Stack Overflow&lt;/a&gt; steered me away from &lt;code&gt;setwd()&lt;/code&gt;.
 I now know I should use something like &lt;code&gt;knitr::opts_knit$set(root.dir = &#39;../myproject&#39;)&lt;/code&gt;. I have been having some trouble with that,
 presumably because of the &lt;code&gt;..&lt;/code&gt; notation to go up a directory, but
-I haven&amp;rsquo;t taken the time yet to case that at. Being impatient I cut
+I haven&amp;rsquo;t taken the time yet to case that out. Being impatient I cut
 corners and sort of hardcoded the file reference in my Rmd file. I&amp;rsquo;ll go back
 and fix that once I figure out the &lt;code&gt;root.dir&lt;/code&gt; parameter.&lt;/p&gt;
 </description>

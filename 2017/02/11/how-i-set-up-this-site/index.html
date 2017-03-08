@@ -306,7 +306,7 @@ but I wondered about what side effects that might produce.
 A <a href="http://stackoverflow.com/questions/20060518/in-rstudio-rmarkdown-how-to-setwd">post on Stack Overflow</a> steered me away from <code>setwd()</code>.
 I now know I should use something like <code>knitr::opts_knit$set(root.dir = '../myproject')</code>. I have been having some trouble with that,
 presumably because of the <code>..</code> notation to go up a directory, but
-I haven&rsquo;t taken the time yet to case that at. Being impatient I cut
+I haven&rsquo;t taken the time yet to case that out. Being impatient I cut
 corners and sort of hardcoded the file reference in my Rmd file. I&rsquo;ll go back
 and fix that once I figure out the <code>root.dir</code> parameter.</p>
 
