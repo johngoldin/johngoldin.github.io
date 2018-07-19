@@ -1,89 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Personal on Can I Blog Too</title>
-    <link>/categories/personal/index.xml</link>
-    <description>Recent content in Personal on Can I Blog Too</description>
+    <title>Personal on Former Site of Can I Blog Too</title>
+    <link>/categories/personal/</link>
+    <description>Recent content in Personal on Former Site of Can I Blog Too</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Feb 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Implementation of Narcissism in R</title>
+      <link>/2017/02/26/an-implementation-of-narcissism-in-r/</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/26/an-implementation-of-narcissism-in-r/</guid>
+      <description>This post is more an example of narcissism, but implementation has a nice technical ring to it.
+Narcissism hasn’t been part of my every-day vocabulary, although it has been in the news recently. Lately we have been seeing discussions about narcissistic personality disorder, but that is not what I am talking about here. At least I hope not, because I’m talking about me.
+Here’s the definition that fits this post:</description>
+    </item>
     
     <item>
       <title>Portfolio of Projects</title>
-      <link>/2017/02/17/portfolio-of-projects/</link>
+      <link>/2017/02/17/portfolio/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/02/17/portfolio-of-projects/</guid>
-      <description>
-
-&lt;!--- created with this command:
-# blogdown::new_post(&#34;Portfolio of Projects&#34;, categories = c(&#34;R&#34;, &#34;personal&#34;), tags = c(&#34;R&#34;), rmd = FALSE)  ---&gt;
-
-&lt;p&gt;One motivation for creating this blog was to display a portfolio of projects that I have worked
-on in the last year or so. I&amp;rsquo;ll list projects here.
-The plan is that eventually I will add pages that elaborate each project. I hope that publishing
-my projects on this site will nudge me to be a bit more systematic as I execute projects.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-diary-of-samuel-pepys-https-goldin-shinyapps-io-search-pepys&#34;&gt;&lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Each morning I read an entry from
-&lt;a href=&#34;http://www.pepysdiary.com/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt; at a wonderful
-site created by &lt;a href=&#34;http://www.gyford.com/&#34;&gt;Phil Gyford&lt;/a&gt;. Pepys kept the diary for about ten years during the 1660&amp;rsquo;s.
-Inspired by a post by
-&lt;a href=&#34;http://juliasilge.com/blog/Life-Changing-Magic/&#34;&gt;Julia Silge&lt;/a&gt;,
-I did some simple
-text processing on the diary. That became the
-occasion for my first shot at creating a Shiny app.
-The resulting web page is available &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;here&lt;/a&gt;. The code to
-create this web page is available on a &lt;a href=&#34;https://github.com/johngoldin/pepys-diary&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I had an opportunity to chat with Julia at the RStudio Conference in Orlando. She gave me some suggestions
-for some additional things I might do with the diary.&lt;/p&gt;
-
-&lt;h3 id=&#34;souvenirs-of-my-walks-https-goldin-shinyapps-io-walks&#34;&gt;&lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;Souvenirs of My Walks&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;../../img/Lake-District.png&#34;, width=&#34;158&#34;, height=&#34;200&#34;&gt;I have always loved to walk. When I retired in 2011 I went on a walking binge.
-At the same time, I discovered that a GPS trace
-could be a fun souvenir of my walks.
-An &lt;a href=&#34;http://mhermans.net/hiking-gpx-r-leaflet.html&#34;&gt;article&lt;/a&gt; I found via &lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R Bloggers&lt;/a&gt; led me
-to try to keep track of my walks more systematically.
-After doing some research on how to access the Flickr API from R,
-I was able to display my photos from Flickr on the GPS trace in a Leaflet map.
-The result is a Shiny app &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;here&lt;/a&gt;.
-I don&amp;rsquo;t thnk this is of great interest to a stranger, but for me it is a fascinating
-picture of my walks. I love to zoom in and see the detail of the map combined with the GPS trace and the photos.
-Like a good souvenir, it triggers lots of memories. If I lingered on a bench additional squiggles appear
-on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.
-The code for the sourvenir walks site is available at a &lt;a href=&#34;https://github.com/johngoldin/Visualizing-Hiking&#34;&gt;GitHub repository&lt;/a&gt;. There are also some &lt;a href=&#34;../../2016/06/28/technical-note--shiny-souvenir-map-of-walks/&#34;&gt;technical notes&lt;/a&gt; and some details on &lt;a href=&#34;../../2016/07/03/using-the-flickr-api-from-r/&#34;&gt;Flickr from R&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;connecticut-data-by-town&#34;&gt;Connecticut Data by Town&lt;/h3&gt;
-
-&lt;p&gt;I did somse exploring to see what kind of data I could find and then created some maps via ggplot2 to display some of that data.&lt;/p&gt;
-
-&lt;h3 id=&#34;census-data-http-rpubs-com-johngoldin-196744&#34;&gt;&lt;a href=&#34;http://rpubs.com/JohnGoldin/196744&#34;&gt;Census Data&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;There is an &lt;a href=&#34;http://cran.r-project.org/web/packages/acs/index.html&#34;&gt;acs package&lt;/a&gt; to access US Census data.
-I did a little bit of exploration to see whether I could create maps of New Haven County based on Census data.
-Finding the right Census table turned out to be more of a trick than I expected. &lt;a href=&#34;http://rpubs.com/JohnGoldin/196744&#34;&gt;Here&lt;/a&gt; is a plot of New Haven County published to RPubs.&lt;/p&gt;
-
-&lt;p&gt;As I was writing
-this summary I found &lt;a href=&#34;http://www.arilamstein.com/blog/2015/11/16/search-census-data-r/&#34;&gt;this blog post&lt;/a&gt;
-that might help. I may get back to that later.&lt;/p&gt;
-
-&lt;h3 id=&#34;an-implementation-of-narcissism-in-r-hahahugoshortcode-3hbhb&#34;&gt;&lt;a href=&#34;../../2017/02/26/an-implementation-of-narcissism-in-r/&#34;&gt;An Implementation of Narcissism in R&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Sometimes I just want to play around plotting some data. What data could be more interesting than data about me?
-It so happens I have a data series of my daily weight spanning more than 20 years. That&amp;rsquo;s not weird, is it. So I did some charts.&lt;/p&gt;
-
-&lt;h3 id=&#34;jai-alai&#34;&gt;Jai Alai&lt;/h3&gt;
-
-&lt;p&gt;Last but not least is jai alai. Back when I was in graduate school, there were two jai alai frontons in Connecticut, Milford and Bridgeport. Actually at one point there was also a third fronton in Hartford.
-There are some unique features to the way betting on jai alai is organized that makes it a bit
-tricky to analyze. Back then that seemed more interesting than working on my dissertaton. That period of my
-life is long past, but the lure of procrastination is still present. So on serveral occasions I have
-plunged back into jai alai. Jai alai was one of the first R projects I worked on after I retired. Recently
-I spent another month of my life on jai alai.&lt;/p&gt;
-</description>
+      <guid>/2017/02/17/portfolio/</guid>
+      <description>One motivation for creating this blog was to display a portfolio of projects that I have worked on in the last year or so. I&amp;rsquo;ll list projects here. The plan is that eventually I will add pages that elaborate each project. I hope that publishing my projects on this site will nudge me to be a bit more systematic as I execute projects.
+The Diary of Samuel Pepys Each morning I read an entry from The Diary of Samuel Pepys at a wonderful site created by Phil Gyford.</description>
     </item>
     
   </channel>

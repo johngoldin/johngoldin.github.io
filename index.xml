@@ -1,13 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Can I Blog Too</title>
-    <link>/index.xml</link>
-    <description>Recent content on Can I Blog Too</description>
+    <title>Former Site of Can I Blog Too</title>
+    <link>/</link>
+    <description>Recent content on Former Site of Can I Blog Too</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Mar 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This Site Has Moved!</title>
+      <link>/2018/07/19/moved/</link>
+      <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/07/19/moved/</guid>
+      <description>This Site Has Moved to https://www.johngoldin.com This site used to be served by GitHub Pages at johngoldin.github.io. No longer!
+The new site is at Netlify. Even though I&amp;rsquo;m a cheapskate, I have sprung for the $10 per year to rent a domain name.
+So the new site is:
+https://www.johngoldin.com
+Click here to go to the new and improved site.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m Back</title>
+      <link>/2018/07/18/i-m-back/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/07/18/i-m-back/</guid>
+      <description>I more or less disappeared from this site for more than a year. I&amp;rsquo;m back. I dusted off the site and figured out how to move my site to Netlify.
+Netlify and Blogdown Adding Netlify to my setup was a bit tricky. It&amp;rsquo;s always harder to do something when you don&amp;rsquo;t know what you&amp;rsquo;re doing. I was a bit shaky on the relationship between Netlify and Github. When I was serving the site via johngoldin.</description>
+    </item>
+    
+    <item>
+      <title>Notes About This Site</title>
+      <link>/2018/07/07/site-notes/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/07/07/site-notes/</guid>
+      <description>An earlier version of this blog was based on johngoldin.github.io. In July of 2018 I redid the blog so that it is hosted by Netlify and uses the name www.johngoldin.com. I had a lot of difficulty converting my old blogdown site. I ended up following Jenny Bryan&amp;rsquo;s advice from her Happy Git book: I burned it down and started over. I created a new empty repo on GitHub and then cloned to an RStudio project on my Mac.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This website is intended to describe some of my personal R projects. It may include some posts on other general subjects.
+To create this site I am using the blogdown package to setup and maintain a website via Hugo using the Hyde theme. An earlier version of the site was served via GitHub Pages. The current site uses Netlify to serve the site.
+My first post describes how I set up this site.</description>
+    </item>
+    
+    <item>
+      <title>American Walker in Britain Part 3</title>
+      <link>/2017/03/15/american-walker-in-britain-part-3/</link>
+      <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/15/american-walker-in-britain-part-3/</guid>
+      <description>Planning an Itinerary You have decided on where you are going to walk. Next you have to work out a detailed itinerary. For any trail covered by a Trailblazer book, it should contain a page that shows suggested itineraries for a relaxed, medium, or fast pace and for B&amp;amp;B&amp;rsquo;s, hostels or bunkhouses, and for camping. That produces a total of nine itineraries. I&amp;rsquo;m assuming you are walking from B&amp;amp;B to B&amp;amp;B (rather than camping or a tour where some transport is provided).</description>
+    </item>
     
     <item>
       <title>American Walker in Britain Part 2</title>
@@ -15,142 +69,8 @@
       <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/03/11/american-walker-in-britain-part-2/</guid>
-      <description>
-
-&lt;h2 id=&#34;choosing-a-path&#34;&gt;Choosing a Path&lt;/h2&gt;
-
-&lt;p&gt;Obviously choosing a path is a matter of personal taste. In the first
-post I included some links where you could ideas on where to walk.
-I&amp;rsquo;ll lay out some concrete possibilities here, just to get you started.
-Don&amp;rsquo;t take this as a prescriptive list.&lt;/p&gt;
-
-&lt;p&gt;Would you prefer walking on the coast or in the hills? If a multi-day route along beautiful seacoast appeals to you then the obvious possibilities are the &lt;a href=&#34;http://www.southwestcoastpath.org.uk/&#34;&gt;South West Coast Path&lt;/a&gt; in Devon and Cornwall or the &lt;a href=&#34;http://www.nationaltrail.co.uk/pembrokeshire-coast-path&#34;&gt;Pembrokeshire Coast Path&lt;/a&gt; in Wales.&lt;/p&gt;
-
-&lt;h4 id=&#34;south-west-coast-path&#34;&gt;South West Coast Path&lt;/h4&gt;
-
-&lt;p&gt;The South West Coast Path is 630 miles long so it&amp;rsquo;s not something you would tackle in one trip. One general piece of advice, is that when you are
-planning where to go, look at the itineraries offered by some of the tour
-companies. If a section of trail seems popular, there may be a good reason
-for it. For my first trip to the South West Coast Path I saw a number of
-tours that went from Padstow to St. Ives in Cornwall. A likely itinerary is
-to do five stages:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Padstow to Treyarnon    
-Treyanon to Newquay (pronounced new-key)    
-Newquay to Perranporth    
-Perranporth to Portreath    
-Portreath to St. Ives    
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;./img/swcp2.png&#34;&gt;
-In terms of accommodatoins there&amp;rsquo;s not much in Treyarnon besides the Youth Hostel (which looked very nice to me, at least from the outside).
-One might get something in Porthcothan, a bit beyond Trearnon.
-The route out of Padstow is around a peninsula called Trevose Head.
-Padstow isn&amp;rsquo;t very far from Treyarnon because the direct
-route cuts across the base of a peninsula.
-It would be practical to take a bus or taxi out of Padstow to
-Porthcothan and then walk back to Padstow. For the second day,
-take the bus back out of Padstow to Porthcothan and then resume the walk.&lt;/p&gt;
-
-&lt;p&gt;I did this itinerary back in 2007. It&amp;rsquo;s a nice walk, and I think it&amp;rsquo;s quite
-popular. Both St. Ives and Padstow are substantial towns that attract a
-lot of holiday visitors. St. Ives is know for the Tate Gallery there and Padstow
-is know for fine dining because of restauranteur &lt;a href=&#34;https://en.wikipedia.org/wiki/Rick_Stein&#34;&gt;Rick Stein&lt;/a&gt;. But I don&amp;rsquo;t know who
-Rick Stein is and I don&amp;rsquo;t know about galleries, so if you are
-craving information about food or art you are in the wrong place. On both
-of my trips to Padstow I stayed at the London Inn and dined on pub food. I didn&amp;rsquo;t starve.&lt;/p&gt;
-
-&lt;p&gt;If you are a fan of the British TV show Doc Martin then by all means start
-your trip in Port Isaac, a day to the east of Padstow and the real life
-location for the fictional village of &lt;a href=&#34;http://www.radiotimes.com/news/2017-02-27/where-is-doc-martin-filmed-martin-clunes-guide-to-port-isaac&#34;&gt;Portwenn&lt;/a&gt;.
-Port Isaac is even more quaint and charming in person than it appears in the TV show.&lt;/p&gt;
-
-&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;./img/swcp_map_sign.png&#34;&gt;
-Given the length of the South West Coast Path, there are lots of other
-possibilities. The northern section at the start of the walk
-from &lt;a href=&#34;https://www.southwestcoastpath.org.uk/walk-coast-path/walking-breaks/3-5-day-breaks/minehead-combe-martin/&#34;&gt;Minehead to Combe Martin or Ilfracombe&lt;/a&gt; also seems to be popular.
-It&amp;rsquo;s a beautiful coastal walk at the north end of &lt;a href=&#34;http://www.exmoor-nationalpark.gov.uk/&#34;&gt;Exmoor National Park&lt;/a&gt;.
-The terrain is much more rugged than the section from Padstow to St. Ives.&lt;/p&gt;
-
-&lt;h4 id=&#34;pembrokeshire-coast-path&#34;&gt;Pembrokeshire Coast Path&lt;/h4&gt;
-
-&lt;p&gt;The &lt;a href=&#34;www.nationaltrail.co.uk/pembrokeshire-coast-path&#34;&gt;Pembrokeshire Coast Path&lt;/a&gt; in Wales is another popular choice.
-I have only done a section north of St. Davids and a walk inland from
-Newport farther up the coast. So I can&amp;rsquo;t offer much in the way of practical
-advice on the itinerary, other than to say I found both
-&lt;img style=&#34;float: right;&#34; src=&#34;./img/pembrokeshire_path.png&#34;&gt;
-St. Davids and Newport to be pleasant spots. Ah, I do have one very
-practica tip. There is more than one Newport in Wales. The larger
-Newport is a substantial city in southeastern Wales not so far
-from Cardiff. That&amp;rsquo;s not the one you want. But there is a smaller, picturesque coastal village called Newport
-in Pembrokeshire on the Coast Path.&lt;/p&gt;
-
-&lt;h4 id=&#34;west-highland-way&#34;&gt;West Highland Way&lt;/h4&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://www.west-highland-way.co.uk/home.asp&#34;&gt;West Highland Way&lt;/a&gt; is one of the most popular routes. It starts north of Glasgow and goes for
-96 miles to Fort William, passing the base of &lt;a href=&#34;http://ben-nevis.com/&#34;&gt;Ben Nevis&lt;/a&gt;, the highest peak in the British Isles
-The highlights of the walk are Loch Lomond and the beautiful valley of Glencoe.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Ye&#39;ll tak&#39; the high road and I&#39;ll tak the low road
-And I&#39;ll be in Scotland afore ye
-But me and my true love will never meet again
-On the bonny, bonny banks of Loch Lomond 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Many parts of the route were originally a military road
-connecting to Fort William, which was a base for the
-pacification of the Highlands after the rebellion of 1745.
-Later is was a route for driving cattle down out of the Highlands
-to market in Glasgow and beyond.&lt;/p&gt;
-
-&lt;p&gt;I walked this route in 1998 on a self-guide tour arranged by &lt;a href=&#34;https://www.sherpavan.com/trails/west_highland_way.asp&#34;&gt;Sherpa&lt;/a&gt;.
-I have great memories of leaving Kingshouse in Glencoe and
-walking up the Devil&amp;rsquo;s Staircase to the highest point on the path
-and a spectacular view of the valley below. And I remember being tired and footsore by the time I reached my bed in Kinlochleven, but that&amp;rsquo;s all
-part of the experience.
-In 2011 I drove through Glencoe with my sisters and it
-was a very different experience from walking the same valley.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-coast-to-coast-path&#34;&gt;The Coast to Coast Path&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.sherpaexpeditions.com/Coast-to-Coast&#34;&gt;The Coast to Coast Path&lt;/a&gt; is not an offical route like the others, but
-it is very popular. My impression is that it had a higher
-proportion of non-British walkers than the other routes, although that may
-be true of the West Highland Way as well. The route passes through
-the Lake District, the Yorkshire Dales Natoinal Park, and the North York
-Moors National Park.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:National-Parks-i&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:National-Parks-i&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; In 2012 I walked this path from St. Bees to Richmond.
-It&amp;rsquo;s a good introduction to the Lake District, but includes the different
-landscape of North Yorkshire farther east. The variety of landscape is one of
-the attractions of the route.&lt;/p&gt;
-
-&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;./img/beachy_head_lighthouse.png&#34;&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;the-south-downs-way&#34;&gt;The South Downs Way&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nationaltrail.co.uk/south-downs-way/be-inspired&#34;&gt;The South Downs Way&lt;/a&gt; in southern England is not so very far from London. I have walked the last nine mile stretch into Eastbourne. That is a magnificent walk, but very unlike
-the rest of the walk. Based on what I have read, this could be a very
-nice walk with convenient access and forgiving terrain.&lt;/p&gt;
-
-&lt;p&gt;There are many other possibilities.&lt;/p&gt;
-
-&lt;h4 id=&#34;some-resources&#34;&gt;Some Resources&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nationaltrail.co.uk/&#34;&gt;National Trails&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.ramblers.org.uk/go-walking.aspx&#34;&gt;Ramblers routes&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.walkingenglishman.com/&#34;&gt;Walking Englishman&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://londonhiker.com/resources/&#34;&gt;London Hiker&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.lonelyplanet.com/united-kingdom/travel-tips-and-articles/76616&#34;&gt;Lonely Planet Top 10&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.walkingbritain.co.uk/&#34;&gt;Walking Britain&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.theguardian.com/travel/2016/apr/23/british-walks-uk-family-long-distance-paths-trails&#34;&gt;20 Superb UK Walks - The Guardian&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:National-Parks-i&#34;&gt;National Parks in the UK are not exclusively park land like a national park in the US. They generally are private land, but there are regulations to preserve the landscape. There are also other landscapes designated as &lt;a href=&#34;http://www.landscapesforlife.org.uk/&#34;&gt;Areas of Outstanding Natural Beauty&lt;/a&gt; that have some legal protection. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:National-Parks-i&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>Choosing a Path Obviously choosing a path is a matter of personal taste. In the first post I included some links where you could find ideas on where to walk. I&amp;rsquo;ll lay out some concrete possibilities here, just to get you started. Don&amp;rsquo;t take this as a prescriptive list.
+Would you prefer walking on the coast or in the hills? If a multi-day route along beautiful seacoast appeals to you then the obvious possibilities are the South West Coast Path in Devon and Cornwall or the Pembrokeshire Coast Path in Wales.</description>
     </item>
     
     <item>
@@ -159,209 +79,7 @@ nice walk with convenient access and forgiving terrain.&lt;/p&gt;
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/03/07/an-american-walking-in-britain/</guid>
-      <description>
-
-&lt;p&gt;Since retiring in 2011, I have been on a binge of walking in the UK. I will try to offer some tips based on lessons I have learned.
-I doubt this would be of any use to someone raised in the UK. Much of what I would say here would be obvious or second nature.
-But lots of things weren&amp;rsquo;t obvious to me as an American and therefore a foreigner unfamiliar with the British countryside.&lt;/p&gt;
-
-&lt;p&gt;As an example right at the outset, compare the words &amp;ldquo;hiking&amp;rdquo; and &amp;ldquo;walking&amp;rdquo;. In the
-US we use the word &amp;ldquo;hike&amp;rdquo; a lot. My impression is that &amp;ldquo;hiking&amp;rdquo; is not the usual term
-in England. Instead one refers to &amp;ldquo;walking&amp;rdquo;. In America, &amp;ldquo;walking&amp;rdquo; implies a short ramble. In the UK one has the hard-core &lt;a href=&#34;https://www.ldwa.org.uk/&#34;&gt;Long Distance Walkers Association&lt;/a&gt;. Their idea of a good time starts
-with about 50 miles in a day. Or a more human-scaled example would be &lt;a href=&#34;https://www.walkingenglishman.com/&#34;&gt;The Walking Englishman&lt;/a&gt; web site, a great source
-of information. In these notes and tips I will try to use English terminology
-(based on my imperfect knowledge) and so I will
-refer to &amp;ldquo;walking&amp;rdquo; rather than &amp;ldquo;hiking&amp;rdquo;.&lt;/p&gt;
-
-&lt;h3 id=&#34;why-walking-in-britain&#34;&gt;Why Walking in Britain&lt;/h3&gt;
-
-&lt;p&gt;More than once while chatting with a local walker on the top of some barren fell,
-&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:A-fell-is-a-term&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:A-fell-is-a-term&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-I have been asked why I have come all the way to England to do my walking.
-Surely there is plenty of opportunity back in the US. What about the Appalachian Trail? Good question. On a number of multi-mile trudges across boggy moorland I have had plenty of opportunity to think about it.&lt;/p&gt;
-
-&lt;p&gt;The UK has a great infrastructure for walking, both short and long distances.
-&lt;img style=&#34;float: right;&#34; src=&#34;./img/finger_pointer.png&#34;&gt;
-One frequently see the ubiquitous &amp;ldquo;public footpath&amp;rdquo; finger posts marking some local public &lt;a href=&#34;https://en.wikipedia.org/wiki/Right_of_way&#34;&gt;right of way&lt;/a&gt;. These footpaths originated as actual transportation routes.
-There must have been quite a bit of that in colonial New England as well.
-I don&amp;rsquo;t know the legal and cultural circumstances that caused those right
-of ways to be preserved in the UK. In modern times, the powerful &lt;a href=&#34;http://www.ramblers.org.uk/&#34;&gt;Ramblers Association&lt;/a&gt; functions somewhat like
-the National Rifle Association, except for walking rather than guns. The Ramblers
-lobby for &lt;a href=&#34;https://en.wikipedia.org/wiki/Countryside_and_Rights_of_Way_Act_2000&#34;&gt;legislation favorable to walkers&lt;/a&gt; and &lt;a href=&#34;http://www.ramblers.org.uk/get-involved/pathwatch.aspx&#34;&gt;actively police&lt;/a&gt; existing
-rights of way.&lt;/p&gt;
-
-&lt;p&gt;In the US hiking routes are associated with wilderness or less desirable land
-that is away from populated areas. In the UK, because many paths grew out of
-transportation routes, they often go from village to village. One consequence
-of that is that in the US one has long distance routes such as
-the Appalachian Trail or the Pacific Crest Trail that emphasize being in
-the wild and require camping. If wilderness is what you are after, long-settled England is not the place to find it. One might refer to the wild coast of
-Cornwall on the South West Coast Path, but one is never very far away from a farm
-or a village. One can feel far from the madding crowd in national parks such
-as Dartmoor or Exmoor. It does feel a bit wild and isolated. But wilderness is
-not the word that describes it.&lt;/p&gt;
-
-&lt;p&gt;For an urbanized senior citizen such as myself, the creature comforts available in the UK are a big attraction. Even on the long distance routes one can walk from
-village to village and stay in a cozy B&amp;amp;B, pub, or small hotel at the end of the day. One starts the day with a full English breakfast and follows a full day
-of walking with a hot shower, a solid evening meal in the local pub, and finally
-a comfortable bed (we hope). The type of walking I do in the UK is
-fundamentally different from the Appalachian Trail. Plus there are no
-bears or mountain lions or rattlesnakes to trouble my calm reflections
-during the walk.
-&lt;figure&gt;
-  &lt;img  src=&#34;./img/canopy_bed.png&#34; alt=&#34;Canopy Bed&#34; width=&#34;304&#34; height=&#34;228&#34;&gt;
-  &lt;figcaption&gt;Isn&amp;rsquo;t this better than camping?&lt;/figcaption&gt;
-&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;Another plus is public transportation, even away from cities and towns. If one wants to do a simple walk, it is often possible to take bus out
-somewhere and walk back to your hotel. Here in Connecticut where I live,
-there is a very nice set of trails (the &lt;a href=&#34;https://www.ctwoodlands.org/blue-blazed-hiking-trails&#34;&gt;Blue Blazed Trails&lt;/a&gt;), but
-almost none of them are near bus routes or motels or places to get food.
-Invariably one has to drive to a trail head. That&amp;rsquo;s true for many foot paths in the UK as well, but there are also many that are available via public transportation.
-&lt;img style=&#34;float: right;&#34; src=&#34;./img/Port_Isaac_Shuttle.png&#34;&gt;
-A couple of times I have decided to cut the day short and catch a bus for
-the rest of the trip. Sometimes there are even simple ferries to get you across
-an estuary. And even in rural areas there often is some sort of tax service available.&lt;/p&gt;
-
-&lt;p&gt;There are other aspects of the UK that probably make a difference. There is less suburban sprawl and less dependece on cars. In my part of the world one does
-not expect to find a motel or hotel anywhere except in a city or near a highway exit. In the UK B&amp;amp;B&amp;rsquo;s and small-scale hotels seem more plentiful. I don&amp;rsquo;t claim to understand all the political, cultural, and legal factors that create those differences in
-the environment. But the result is good for walkers.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll mention one other factor about the English landscape: sheep. I like sight lines. I enjoy walking through woods now and again, but I&amp;rsquo;m not so big on a full day of it.
-I like to get out in the open and see a long distance. In the American West,
-desert or altitude clear away the trees and give the hiker an unobstructed
-view. I like that kind of walking. In ancient times Britain was covered in
-forests. (Well, maybe &lt;a href=&#34;http://www.nerc.ac.uk/planetearth/stories/608/&#34;&gt;not completely covered&lt;/a&gt;.)
-In large swaths of Britain the land is kept clear of trees by grazing animals,
-primarily sheep. Sometimes one will see a small stand of trees protected by
-an old stone wall enclosing the grove. There are lots of wooded areas in the UK and perhaps I&amp;rsquo;m overstating things a bit.
-But I associate areas like North Yorkshire with rolling green hills clear
-of trees. In Connecticut a long walk invariably involves a walk in the woods.&lt;/p&gt;
-
-&lt;p&gt;All in all, walking in the UK seems to be a much more visible and popular activity than hiking is in the US.
-There are TV shows, books, guides, and maps in far greater volume than
-in the US. &lt;a href=&#34;https://en.wikipedia.org/wiki/Alfred_Wainwright&#34;&gt;Alfred Wainwright&lt;/a&gt;
-seems to be regarded as the the key figure in the modern popularity
-of walking in Britain, especially the Lake District. He basically
-invented the route for the Coast to Coast Path, which is one of the most
-popular routes even though it is not one of the offical &lt;a href=&#34;http://www.nationaltrail.co.uk/&#34;&gt;National Trails&lt;/a&gt;.
-There is a popular series of BBC programs by &lt;a href=&#34;https://www.youtube.com/watch?v=8A9U9y1LMNM&#34;&gt;Julia Bradbury&lt;/a&gt;
-describing
-Waintwright&amp;rsquo;s fell walks. The original &lt;a href=&#34;https://www.amazon.com/Alfred-Wainwright/e/B001HPUBVK/ref=sr_tc_2_0?qid=1489257346&amp;amp;sr=1-2-ent&#34;&gt;Wainwright guide books&lt;/a&gt; are
-now somewhat out of date, but his enthusiasm is contagious and
-his drawings are quite charming. If your local public library
-has a copy, take a look.&lt;/p&gt;
-
-&lt;p&gt;There are lots of other examples of the popularity of walking in Britain.
-Julia Bradbury has a whole series of TV programs on walking including the &lt;a href=&#34;https://www.youtube.com/watch?v=PRjhfaxOSyo&#34;&gt;Coast
-to Coast Path&lt;/a&gt; and another on &lt;a href=&#34;https://www.youtube.com/watch?v=96PUMMzARDo&#34;&gt;Best Walks&lt;/a&gt; and even &lt;a href=&#34;https://www.youtube.com/watch?v=qHX-ZBC_d80&amp;amp;index=3&amp;amp;list=PLwJ3dKGiVfLKsZ5YVkkkIUrq28oC0bQHt&#34;&gt;railway walks&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are plenty of books extolling the pleasures of walking in Britain. &lt;a href=&#34;http://www.paddydillon.co.uk/guidebook/the-national-trails/&#34;&gt;The National Trails of England, Scotland and Wales&lt;/a&gt; by Paddy Dillon provides
-a modern overview of each of the national trails with pictures, text, and
-a map to orient you. A book which is significant for me is &lt;a href=&#34;The National 
-Trust Book of Long Walks in England, Scotland and Wales&#34;&gt;The National
-Trust Book of Long Walks in England, Scotland and Wales&lt;/a&gt; by Adam Nicolson with photographs by Charlie Waite.
-This
-book was my introduction to the long distance trails in Britain. After stumbling
-on the existance of the Pennine Way in 1997, I wanted to know more and
-found the National Trust book in the New Haven Public Library
-after I returned home.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll leave it to Julia Bradbury and the authors of these books to
-wax lyrical about the glories of British walking. In these notes
-I will be much more prosaic.&lt;/p&gt;
-
-&lt;h3 id=&#34;types-of-walks&#34;&gt;Types of Walks&lt;/h3&gt;
-
-&lt;p&gt;The first trip I took to England was planned as a car trip around North Yorkshire.
-But I quickly realized that if I went to the local tourist information center (TIC) there often was information about some local walks. I ended up doing a
-number of half-day walks, including two that lay the ground work for
-an enduring interest in walking in Britain. So mixing car touring with
-walking is an entirely reasonable way to go. One one trip in Wales I arranged to stay for two nights in each of three places. That often worked out to be
-a half day walk on the day I arrived and then a full-day of walking before
-staying the second night. I started out with a two days in Wotton-under-Edge and a full-days&amp;rsquo;s walk on the Cotswold Way, two days in St. Davids in Wales and the Pembrokeshire Coast Path and then two more nights in the northern half of
-Wales. There are lots of areas where one could do something like that. With
-a bit of planning, one could do something like that via bus or train and avoid
-the car entirely (a big plus if one has qualms about driving on the left side of the road).&lt;/p&gt;
-
-&lt;h3 id=&#34;tour-companies&#34;&gt;Tour Companies&lt;/h3&gt;
-
-&lt;p&gt;There are many companies that arrange walking holidays. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:More-language-is&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:More-language-is&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; I used &lt;a href=&#34;https://www.sherpaexpeditions.com/United-Kingdom&#34;&gt;Sherpa&lt;/a&gt; for a self-guided
-tour on the West Highland Way. There are many others. A &amp;ldquo;self-guided&amp;rdquo;&amp;rdquo; tour means that they will organize a route and accomodations, provide you with a map and
-directions, and usually also arrange to transport your luggage. Guided tours mean that you walk with a group. The only group tour I have done was an REI tour in the United States walking rim to rim across the Grand Canyon. I can&amp;rsquo;t claim to have any expertise about organized tours. It&amp;rsquo;s a definite possibility, and well
-worth your consideration. Just google &amp;ldquo;walking&amp;rdquo; and &amp;ldquo;britain&amp;rdquo; or &amp;ldquo;England&amp;rdquo; or &amp;ldquo;Scotland&amp;rdquo; and you will find a lot of options. An organized tour is a good way
-to get started.&lt;/p&gt;
-
-&lt;p&gt;There are also walking holidays that are organized out of a particular inn. You stay there for a period of time and each day your hosts arrange transportation to and from a walk for that day. This is not something I have any experience with.&lt;/p&gt;
-
-&lt;h3 id=&#34;camping&#34;&gt;Camping&lt;/h3&gt;
-
-&lt;p&gt;Although I&amp;rsquo;ve made it clear that camping is not my cup of tea, plenty of people
-do make there way along the long-distance trails in Britain camping in much the
-same way as Americans on the Appalachian or Pacific Coast Trails. It&amp;rsquo;s
-not something I know anything about so all I can do is
-acknowledge that it is a popular possibility.&lt;/p&gt;
-
-&lt;h3 id=&#34;multi-day-walks&#34;&gt;Multi-day Walks&lt;/h3&gt;
-
-&lt;p&gt;After doing the Sherpa-organized walk on the West Highland Way (almost twenty years ago)
-I thought to myself that I could arrange that myself. And that&amp;rsquo;s what I have been
-doing.
-What I am hoping to do in these posts is to share some
-practical advice on doing a multi-day walk in Britain.
-Does it seem as though I am deliberately mystifying the whole process?
-Not at all. The point I hope I have made is that there are lots of things in Britain that
-come together to make a walking trip easy and satisfying.
-And there is tons and tons of information available. Like
-all travel activity, the web provides lots of ways to get
-useful information. But if you are contemplating a trip on one of
-England&amp;rsquo;s &lt;a href=&#34;http://www.nationaltrail.co.uk/&#34;&gt;National Trails&lt;/a&gt; or
-other trails such as &lt;a href=&#34;https://ramblingman.org.uk/planningatrip/planning_a_coast_to_coast#s7&#34;&gt;The Coast to Coast Path&lt;/a&gt;
-or the &lt;a href=&#34;http://www.west-highland-way.co.uk/home.asp&#34;&gt;West Highland Way&lt;/a&gt;,
-buy a guide book. &lt;a href=&#34;https://trailblazer-guides.com/books&#34;&gt;Trailblazer&lt;/a&gt; seems to dominate
-the market, at least for some trails in Britain. I have used a bunch of Trailblazer guides.
-They have a similar style and organization although different authors.
-They are loaded with very practical information including details about
-route, accomodations, and services. They include useful hand drawn
-maps of the route. Often you can find them on Amazon or other site in the US, but
-you can also order them directly from Trailblazer. I just checked their web site
-and I am shocked to see that they seem to offer free shipping world wide.
-Of course there are other guide books available as well.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-next&#34;&gt;What Next?&lt;/h3&gt;
-
-&lt;p&gt;So much for general introduction.
-What I aspire to do
-in these posts is something like what &lt;a href=&#34;http://londonhiker.com/advice-and-tips/you-can-have-london-and-the-hills&#34;&gt;The London Hiker&lt;/a&gt; does
-for the city-bound in London.
-I will try to address particular topics and try to
-include the kinds of details that I didn&amp;rsquo;t
-know before my first walking holiday. Here&amp;rsquo;s the plan. Next step will be for me to fill this in.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./2017/03/11/american-walker-in-britain-part-2/#choosing-a-path&#34;&gt;Choosing a path&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Planning an itinerary&lt;/li&gt;
-&lt;li&gt;Arranging for accommodations&lt;/li&gt;
-&lt;li&gt;Luggage transport&lt;/li&gt;
-&lt;li&gt;Food&lt;/li&gt;
-&lt;li&gt;Money&lt;/li&gt;
-&lt;li&gt;What to bring&lt;/li&gt;
-&lt;li&gt;Packing&lt;/li&gt;
-&lt;li&gt;Navigation&lt;/li&gt;
-&lt;li&gt;Rain (and how to cope)&lt;/li&gt;
-&lt;li&gt;Training, Fitness, and Foot Care&lt;/li&gt;
-&lt;li&gt;Safety&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:A-fell-is-a-term&#34;&gt;A &amp;ldquo;fell&amp;rdquo; is a term primarily used in northern England or Scotland for a hill top. Often appears in place names such as Cross Fell.  See also &lt;a href=&#34;https://www.walkingenglishman.com/&#34;&gt;fell running&lt;/a&gt;. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:A-fell-is-a-term&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:More-language-is&#34;&gt;More language issues: they say &amp;ldquo;holiday&amp;rdquo; where we say &amp;ldquo;vacation&amp;rdquo;. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:More-language-is&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>Since retiring in 2011, I have been on a binge of walking in the UK. I will try to offer some tips based on lessons I have learned. I doubt this would be of any use to someone raised in the UK. Much of what I would say here would be obvious or second nature. But lots of things weren&amp;rsquo;t obvious to me as an American and therefore a foreigner unfamiliar with the British countryside.</description>
     </item>
     
     <item>
@@ -370,275 +88,19 @@ know before my first walking holiday. Here&amp;rsquo;s the plan. Next step will 
       <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/02/26/an-implementation-of-narcissism-in-r/</guid>
-      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
-
-
-
-&lt;!-- /BLOGDOWN-HEAD --&gt;
-
-&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;This post is more an &lt;em&gt;example&lt;/em&gt; of narcissism, but &lt;em&gt;implementation&lt;/em&gt; has a nice technical ring to it.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Narcissism&lt;/em&gt; hasn’t been part of my every-day vocabulary, although it has been in the news recently. Lately we have been seeing discussions about &lt;a href=&#34;https://www.theatlantic.com/magazine/archive/2016/06/the-mind-of-donald-trump/480771/&#34;&gt;narcissistic personality disorder&lt;/a&gt;, but that is not what I am talking about here. At least I hope not, because I’m talking about me.&lt;/p&gt;
-&lt;p&gt;Here’s the definition that fits this post:&lt;br /&gt;
-&lt;a href=&#34;http://www.dictionary.com/browse/narcissism&#34;&gt;Narcissism&lt;/a&gt; noun&lt;br /&gt;
-1. inordinate fascination with oneself; excessive self-love; vanity. Synonyms: self-centeredness, smugness, egocentrism.&lt;/p&gt;
-&lt;p&gt;So “inordinate fascination with oneself” may be a good characterization of the datasets presented here. I don’t think “excessive self-love” or “vanity” have much to do with it.&lt;/p&gt;
-&lt;div id=&#34;a-twenty-year-history-of-my-weight&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;A Twenty Year History of My Weight&lt;/h3&gt;
-&lt;p&gt;For the last twenty-one years I have been recording my weight almost every single morning. I ry to follow a consistent protocol. I’m in my pajamas before I go downstairs for tea and breakfast. It’s a more stable and reliable measure of weight than what is recorded in my doctor’s office. I have owned three scales during the twenty-one year period. The first one was analog and I wrote down my weight to the nearest pound. When I got a dgital scale in 2004, I used both scales for a period of time and adjusted the measurements from the analog scale according to the average difference from the digital scale. In short, I was serious about trying to establish a reliable measurement over time.&lt;/p&gt;
-&lt;p&gt;Is it weird or creepy to publish this data series on the internet? I’ll say some more about that at the &lt;a href=&#34;#is-this-creepy&#34;&gt;bottom of the post&lt;/a&gt;. For now, bring on the data.&lt;/p&gt;
-&lt;p&gt;The R code used to plot this weight history isn’t terribly interesting, but I’ll show my work anyway. First I am showing the weight by day.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages(
-  library(tidyverse))
-# tidyverse loads these packages:
-# Loading tidyverse: ggplot2
-# Loading tidyverse: tibble
-# Loading tidyverse: tidyr
-# Loading tidyverse: readr
-# Loading tidyverse: purrr
-# Loading tidyverse: dplyr
-suppressPackageStartupMessages(library(stringr))    # for processing strings
-suppressPackageStartupMessages(library(lubridate))  # for dates&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# I was having trouble getting root.dir knitr parameter to work,
-# so I am hard coding a path to my data.
-if (str_detect(getwd(), &amp;quot;johng&amp;quot;)) {
-    fp &amp;lt;- file.path(&amp;quot;/Users&amp;quot;, &amp;quot;johng&amp;quot;, &amp;quot;Dropbox&amp;quot;, &amp;quot;Programming&amp;quot;,
-                                    &amp;quot;R_Stuff&amp;quot;, &amp;quot;John Vitals&amp;quot;,&amp;quot;john weight.csv&amp;quot;)
-} else {
-        fp &amp;lt;- file.path(&amp;quot;/Users&amp;quot;, &amp;quot;john_imac&amp;quot;, &amp;quot;Dropbox&amp;quot;, &amp;quot;Programming&amp;quot;,
-                                        &amp;quot;R_Stuff&amp;quot;, &amp;quot;John Vitals&amp;quot;,&amp;quot;john weight.csv&amp;quot;)}
-weight_data &amp;lt;- read_csv(fp, col_types = cols(
-     date = col_date(&amp;quot;%m/%d/%Y&amp;quot;)))
-
-weight_data$month &amp;lt;- month(weight_data$date, label = TRUE)
-weight_data$weight &amp;lt;- ifelse(is.na(weight_data$adjusted), 
-                                                         weight_data$raw, 
-                                                         weight_data$adjusted)
-# in 2004 I started entering data without decimals to save time, 
-# so 1746 is 174.6 
-# Next line converts the numbers that are so large they must be four
-# digits without decimal:
-weight_data$weight &amp;lt;- ifelse(weight_data$weight &amp;gt; 250, 
-                                                         weight_data$weight / 10, 
-                                                         weight_data$weight)
-weight_data$year &amp;lt;- factor(year(weight_data$date)) 
-
-# get average weight by month
-weight_data$mid_month &amp;lt;- 
-    floor_date(weight_data$date, unit = &amp;quot;month&amp;quot;) + 
-    days(14)
-wtm &amp;lt;- group_by(weight_data, mid_month, month) %&amp;gt;% 
-    summarise(weight = mean(weight, na.rm = TRUE))
-# weight by month, but without partial 1996
-wtm2 &amp;lt;- filter(wtm, year(mid_month) &amp;gt; 1996) 
-byday &amp;lt;- ggplot(data = weight_data, 
-                                aes(x = date, y = weight)) + 
-    scale_x_date(date_breaks = &amp;quot;5 years&amp;quot;, 
-                             date_minor_breaks = &amp;quot;1 year&amp;quot;)
-#  put the gray regression line first so that it is underneath the 
-#  points and the other loess smoothed line.
-byday &amp;lt;- byday + geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE, 
-                                                         data = wtm2, 
-                                                         aes(x = mid_month), 
-                                                         colour = &amp;quot;darkgray&amp;quot;, size = 1.5)
-byday &amp;lt;- byday + geom_point(size = 0.5) +  
-    geom_smooth(data = wtm, aes(x = mid_month), span = 0.07)
-byday &amp;lt;- byday + 
-    ggtitle(&amp;quot;One Individual&amp;#39;s Daily Weight During a Twenty-one Year Span&amp;quot;) + 
-    ylab(&amp;quot;weight (pounds)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/byday-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;seasonal-variation-in-weight&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Seasonal Variation in Weight&lt;/h3&gt;
-&lt;p&gt;In the chart above showing my daily weight, I adjusted the “span” argument to &lt;code&gt;geom_smooth&lt;/code&gt; so that the smoothed curve shows seasonal patterns fairly clearly. (If the span parameter were smaller, I would get more bouncing around within years. If it were larger, the curve would emphasize multi-year trends.)&lt;/p&gt;
-&lt;p&gt;First I will redo the chart in a way that emphasizes the pattern within years.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wtm$year &amp;lt;- year(wtm$mid_month)
-weight_data$year &amp;lt;- year(weight_data$mid_month)
-weight_data$month_with_fraction &amp;lt;- month(weight_data$mid_month) + ((day(weight_data$date) - day(weight_data$mid_month)) / 31)
-pmonth &amp;lt;- ggplot(data = wtm, 
-                                 aes(x = month(mid_month), y = weight))
-pmonth &amp;lt;- pmonth + geom_point(data = 
-                                                                subset(weight_data, 
-                                                                             !is.na(weight)), 
-                                                            size = 0.05, 
-                                                            aes(x = month_with_fraction)) +
-    facet_wrap(~year, nrow = 1) + 
-    geom_smooth(na.rm = TRUE, se = FALSE) +
-  scale_x_continuous(breaks = seq(1, 12, 4), 
-                                     minor_breaks = seq(1, 12, 1)) +
-  ggtitle(&amp;quot;Weight by Year&amp;quot;) + ylab(&amp;quot;Weight&amp;quot;) + xlab(&amp;quot;Month&amp;quot;)
-plot(pmonth)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/byyear-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;You can see that for most years there is an &lt;em&gt;N&lt;/em&gt; shaped pattern. In January weight is still headed up and reaches its peak later in the winter. The trough happens at the end of the summer. It starts back up and continues higher through the end of the year. Basically it is high in early spring and low in early fall. It shows up as an &lt;em&gt;N&lt;/em&gt; in this chart because the annual boundary between January and December interrupts the pattern.&lt;/p&gt;
-&lt;p&gt;I would guess that seasonal adjustment would be a big topic in econometrics. I don’t know much about that. But of course there is an R package called &lt;a href=&#34;https://cran.r-project.org/web/packages/seasonal/&#34;&gt;seasonal&lt;/a&gt; and another package called &lt;a href=&#34;https://cran.r-project.org/web/packages/seasonal/&#34;&gt;season&lt;/a&gt;. I looked at &lt;code&gt;season&lt;/code&gt; quickly. Neither package seemed helpful in my immediate case, so I went back to something more basic.&lt;/p&gt;
-&lt;p&gt;Looking at the previous figure, some years do not seem to fit the ususal seasonal pattern. I decided to remove years 2005, 2006, and 2008. That’s a bit arbitrary, but probably harmless. For the remaining years, I calculated the mean weight for each month and then subtracted the overall mean for the corresponding year. In other words, I looked at the difference between month average and annual average.&lt;/p&gt;
-&lt;p&gt;Next I plotted the monthly variation from the annual mean.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;year_average &amp;lt;- wtm2 %&amp;gt;% mutate(year = year(mid_month)) %&amp;gt;% group_by(year) %&amp;gt;%
-    summarise(year_avg = mean(weight, na.rm = TRUE)) %&amp;gt;%
-    select(year, year_avg)
-month_differential &amp;lt;- wtm2 %&amp;gt;% mutate(year = year(mid_month)) %&amp;gt;% 
-  filter(!(year %in% c(2005, 2006, 2008))) %&amp;gt;%
-  left_join(year_average, by = c(&amp;quot;year&amp;quot;)) %&amp;gt;% 
-    mutate(dif = weight - year_avg) 
-print(names(month_differential))
-## [1] &amp;quot;mid_month&amp;quot; &amp;quot;month&amp;quot;     &amp;quot;weight&amp;quot;    &amp;quot;year&amp;quot;      &amp;quot;year_avg&amp;quot;  &amp;quot;dif&amp;quot;
-p &amp;lt;- ggplot(data = month_differential, aes(x = month, y = dif))
-# p &amp;lt;- p + geom_line(aes(group = year), colour = &amp;quot;lightgray&amp;quot;)
-p &amp;lt;- p + geom_point() + 
-    labs(y = &amp;quot;Difference from Annual Mean&amp;quot;, 
-             x = &amp;quot;&amp;quot;, 
-             title = &amp;quot;Monthly Variation from Annual Mean&amp;quot;)
-p &amp;lt;- p + geom_smooth(aes(x = as.numeric(month)))
-p &amp;lt;- p + scale_y_continuous(breaks = seq(-4, 4, 2))
-plot(p)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-02-26-narcissism-in-r_files/figure-html/seasonal-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;The moral of this story from my point of view is that I should pay attention to the seasonal variation when I am ready to be complacent because my weight seems to be going down in August. As I write this, it is the beginning of March. My weight has been creeping up. I should watch what I eat because I have a couple of months to go of potential seasonal increase in weight.&lt;/p&gt;
-&lt;p&gt;Note that because the plot runs from January to December, it makes it hard to notice that the mean differential in January is lower than either December or February. There’s an odd dip in January. I don’t have an explanation for this. Perhaps it’s more of a story of December be anomalously high than of January being anomalously low. But this is a minor detail.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;weight-gain-by-year&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Weight Gain by Year&lt;/h3&gt;
-&lt;p&gt;Am I getting fat? That is a question that has popped into my head from time to time over the years, especially after I increased the waist size for my pants.&lt;/p&gt;
-&lt;p&gt;For a somewhat glib discussion of weight gain by year, see Wonkblog &lt;a href=&#34;https://www.washingtonpost.com/news/wonk/wp/2016/01/29/the-age-when-you-gain-the-most-weight/?utm_term=.082bca258fcb&#34;&gt;Look at how much weight you are going to gain&lt;/a&gt;. The article says the expected gain is between 0.5 and 1.5 pounds per year. The straight dark gray line on my weight chart is the regressioin line through the monthly data, but without the bit at the left end in 1996. The slope is about 1.4 pounds per year.&lt;/p&gt;
-&lt;div id=&#34;national-statistics-on-weight-by-age&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;National Statistics on Weight by Age&lt;/h4&gt;
-What do we know about weight by age in the general population? One source is the &lt;a href=&#34;https://wwwn.cdc.gov/nchs/nhanes/ContinuousNhanes/Questionnaires.aspx?BeginYear=2015&#34;&gt;National Health and Nutrition Examination Survey&lt;/a&gt; or &lt;strong&gt;NHANES&lt;/strong&gt;. (There is a summary report for &lt;a href=&#34;https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf&#34;&gt;Anthropometric Reference Data&lt;/a&gt; that includes weight.) That is the source for the Wonkblog referred to above. It also seems to be the source for these charts (for white women and men) which were compiled at &lt;a href=&#34;http://halls.md/average-height-weight-charts/&#34;&gt;Dr. Halls&lt;/a&gt; website, which does not exactly reek of credibility.
-&lt;p&gt;
-&lt;p&gt;&lt;img src=&#34;http://halls.md/chart/WomenWeightWhite.gif&#34; style=&#34;width: 360px; max-width: 100%&#34;/&gt; &lt;img src=&#34;http://halls.md/chart/MenWeightWhite.gif&#34; style=&#34;width: 360px; max-width: 100%&#34;/&gt; For white males, it shows weight peeking between 50 and 55 and then beginning to decline with age. Maybe. I was born in 1950 so I turned 55 in 2005. My personal peek seems to have been in the vicinity of 62. Maybe my slightly lower weight during the last two years is just another side effect of growing older. But it’s a bit problematic to use cross-sectional data like this as a longitudinal norm. We hear a lot about “the obesity epidemic” so maybe the 55-year old people in this chart will keep going up or stay the same as they get older. Maybe the peek is near 55 as a result of the “obesity epidemic” moving through the age distribution. I don’t know. The turndown after the peak may be only indirectly related to age. Almost any illness or medical problem is increases with age. Maybe age leads to illness and illness leads to weight loss. In my case, illness is not a factor.&lt;/p&gt;
-&lt;p&gt;The CDC NHANES survey seems to be done annually so it would be possible to look at the change in the distribution over time. They have data sets for the &lt;a href=&#34;https://wwwn.cdc.gov/nchs/nhanes/Search/DataPage.aspx?Component=Examination&#34;&gt;National Health and Nutrition Examination Survey&lt;/a&gt; year by year from 1999 to 2013.&lt;/p&gt;
-&lt;p&gt;I confess I’m not sufficiently interested in the issue of weight and age to dig in and try to get all that sorted out. Maybe I’ll come back to this. Were I to get interested, there is quite a bit of raw data available from NHANES for download as XPT files, which I see is the SAS data transport format. As usual, &lt;a href=&#34;https://github.com/hadley&#34;&gt;Hadley&lt;/a&gt; is one step ahead of me and the latest version of &lt;a href=&#34;https://github.com/tidyverse/haven/blob/master/NEWS.md&#34;&gt;haven 1.0.0.9&lt;/a&gt; (which is not yet up on &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;CRAN&lt;/a&gt;) adds &lt;code&gt;read_xpt&lt;/code&gt; as a command to read XPT SAS transport datasets. Maybe I’ll try that at some point, but in the meantime I want to press ahead with my more self-centered (or should I say &lt;em&gt;narcissistic&lt;/em&gt;) exploraton of my personal body statistics.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;is-this-creepy&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Is this Creepy?&lt;/h3&gt;
-&lt;p&gt;I don’t think I am revealing any deep personal secrets by posting this data. On the other hand, it does seem a little weird. A couple of years after I started recording my weight every morning I read &lt;a href=&#34;http://www.goodreads.com/book/show/48858.Travels_With_My_Aunt&#34;&gt;&lt;em&gt;Travels With My Aunt&lt;/em&gt;&lt;/a&gt;, a very funny Graham Greene novel. Toward the end of the book the protoganist encounters a middle-aged CIA agent who does seem a bit creepy. And he also has become focused on self-measurement:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“I’ve never told anyone about this, Henry,” he said. “It would seem kind of funny to most people, I guess. The fact is I count while I’m pissing and then I write down how long I’ve taken and what time it is. Do you realize we spend more than one whole day a year pissing?”&lt;/p&gt;
-&lt;p&gt;“Good heavens,” I said.&lt;/p&gt;
-&lt;p&gt;“I can prove it, Henry. Look here.” He opened his notebook and showed me a page. His writing went something like this:&lt;/p&gt;
-&lt;p&gt;               July 28&lt;br /&gt;
-       7.15       0.41&lt;br /&gt;
-     10.45       0.37&lt;br /&gt;
-     12.30       0.50&lt;br /&gt;
-     13.15       0.32&lt;br /&gt;
-     13.40       0.50&lt;/p&gt;
-&lt;p&gt;[some detailed, and creepy, discussion of the details of the results appears here.]&lt;/p&gt;
-&lt;p&gt;“Are you drawing any conclusions?” I asked,&lt;/p&gt;
-&lt;p&gt;“That’s not my job,” he said. “I’m no expert. I just report the facts and any data–like the gins and the weather–that seem to have a bearing. It’s for others to drawthe conclusions.”&lt;/p&gt;
-&lt;p&gt;“Who are the others?”&lt;/p&gt;
-&lt;p&gt;“Well, I thought when I had completed six months’ research I’d get in touch with a urinary specialist You don’t know what he mightn’t be able to read into these figures. Those guys deal all the time with the sick. It’s important to them to know what happens in the case of an average fellow.”&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.goodreads.com/book/show/48858.Travels_With_My_Aunt&#34;&gt;Travels With My Aunt&lt;/a&gt;. Graham Greene. Penguin Classics. Graham Greene Centennial Edition, pp. 190-191.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I have often thought of this passage as I wrote down my weight each morning, recognizing I was doing something a bit odd. As I was composing this post, I went to the library and fetched a copy of &lt;em&gt;Travels with My Aunt&lt;/em&gt; and paged through it to find these lines. It was just as odd as I remembered it.&lt;/p&gt;
-&lt;p&gt;So am I drawing any conclusions from my data? In part I agree with the CIA agent. I’m just collecting raw data. Sometimes, like Graham Greene’s character, I imagine handing it off to some medical specialist who could make something out of it. Maybe. Or mayby not.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>This post is more an example of narcissism, but implementation has a nice technical ring to it.
+Narcissism hasn’t been part of my every-day vocabulary, although it has been in the news recently. Lately we have been seeing discussions about narcissistic personality disorder, but that is not what I am talking about here. At least I hope not, because I’m talking about me.
+Here’s the definition that fits this post:</description>
     </item>
     
     <item>
       <title>Portfolio of Projects</title>
-      <link>/2017/02/17/portfolio-of-projects/</link>
+      <link>/2017/02/17/portfolio/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/02/17/portfolio-of-projects/</guid>
-      <description>
-
-&lt;!--- created with this command:
-# blogdown::new_post(&#34;Portfolio of Projects&#34;, categories = c(&#34;R&#34;, &#34;personal&#34;), tags = c(&#34;R&#34;), rmd = FALSE)  ---&gt;
-
-&lt;p&gt;One motivation for creating this blog was to display a portfolio of projects that I have worked
-on in the last year or so. I&amp;rsquo;ll list projects here.
-The plan is that eventually I will add pages that elaborate each project. I hope that publishing
-my projects on this site will nudge me to be a bit more systematic as I execute projects.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-diary-of-samuel-pepys-https-goldin-shinyapps-io-search-pepys&#34;&gt;&lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Each morning I read an entry from
-&lt;a href=&#34;http://www.pepysdiary.com/&#34;&gt;The Diary of Samuel Pepys&lt;/a&gt; at a wonderful
-site created by &lt;a href=&#34;http://www.gyford.com/&#34;&gt;Phil Gyford&lt;/a&gt;. Pepys kept the diary for about ten years during the 1660&amp;rsquo;s.
-Inspired by a post by
-&lt;a href=&#34;http://juliasilge.com/blog/Life-Changing-Magic/&#34;&gt;Julia Silge&lt;/a&gt;,
-I did some simple
-text processing on the diary. That became the
-occasion for my first shot at creating a Shiny app.
-The resulting web page is available &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;here&lt;/a&gt;. The code to
-create this web page is available on a &lt;a href=&#34;https://github.com/johngoldin/pepys-diary&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I had an opportunity to chat with Julia at the RStudio Conference in Orlando. She gave me some suggestions
-for some additional things I might do with the diary.&lt;/p&gt;
-
-&lt;h3 id=&#34;souvenirs-of-my-walks-https-goldin-shinyapps-io-walks&#34;&gt;&lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;Souvenirs of My Walks&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;./img/Lake-District.png&#34;, width=&#34;158&#34;, height=&#34;200&#34;&gt;I have always loved to walk. When I retired in 2011 I went on a walking binge.
-At the same time, I discovered that a GPS trace
-could be a fun souvenir of my walks.
-An &lt;a href=&#34;http://mhermans.net/hiking-gpx-r-leaflet.html&#34;&gt;article&lt;/a&gt; I found via &lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R Bloggers&lt;/a&gt; led me
-to try to keep track of my walks more systematically.
-After doing some research on how to access the Flickr API from R,
-I was able to display my photos from Flickr on the GPS trace in a Leaflet map.
-The result is a Shiny app &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;here&lt;/a&gt;.
-I don&amp;rsquo;t thnk this is of great interest to a stranger, but for me it is a fascinating
-picture of my walks. I love to zoom in and see the detail of the map combined with the GPS trace and the photos.
-Like a good souvenir, it triggers lots of memories. If I lingered on a bench additional squiggles appear
-on the GPS trace showing where I stopped for a spell. I can also see my wrong turns.
-The code for the sourvenir walks site is available at a &lt;a href=&#34;https://github.com/johngoldin/Visualizing-Hiking&#34;&gt;GitHub repository&lt;/a&gt;. There are also some &lt;a href=&#34;./2016/06/28/technical-note--shiny-souvenir-map-of-walks/&#34;&gt;technical notes&lt;/a&gt; and some details on &lt;a href=&#34;./2016/07/03/using-the-flickr-api-from-r/&#34;&gt;Flickr from R&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;connecticut-data-by-town&#34;&gt;Connecticut Data by Town&lt;/h3&gt;
-
-&lt;p&gt;I did somse exploring to see what kind of data I could find and then created some maps via ggplot2 to display some of that data.&lt;/p&gt;
-
-&lt;h3 id=&#34;census-data-http-rpubs-com-johngoldin-196744&#34;&gt;&lt;a href=&#34;http://rpubs.com/JohnGoldin/196744&#34;&gt;Census Data&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;There is an &lt;a href=&#34;http://cran.r-project.org/web/packages/acs/index.html&#34;&gt;acs package&lt;/a&gt; to access US Census data.
-I did a little bit of exploration to see whether I could create maps of New Haven County based on Census data.
-Finding the right Census table turned out to be more of a trick than I expected. &lt;a href=&#34;http://rpubs.com/JohnGoldin/196744&#34;&gt;Here&lt;/a&gt; is a plot of New Haven County published to RPubs.&lt;/p&gt;
-
-&lt;p&gt;As I was writing
-this summary I found &lt;a href=&#34;http://www.arilamstein.com/blog/2015/11/16/search-census-data-r/&#34;&gt;this blog post&lt;/a&gt;
-that might help. I may get back to that later.&lt;/p&gt;
-
-&lt;h3 id=&#34;an-implementation-of-narcissism-in-r-hahahugoshortcode-3hbhb&#34;&gt;&lt;a href=&#34;./2017/02/26/an-implementation-of-narcissism-in-r/&#34;&gt;An Implementation of Narcissism in R&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Sometimes I just want to play around plotting some data. What data could be more interesting than data about me?
-It so happens I have a data series of my daily weight spanning more than 20 years. That&amp;rsquo;s not weird, is it. So I did some charts.&lt;/p&gt;
-
-&lt;h3 id=&#34;jai-alai&#34;&gt;Jai Alai&lt;/h3&gt;
-
-&lt;p&gt;Last but not least is jai alai. Back when I was in graduate school, there were two jai alai frontons in Connecticut, Milford and Bridgeport. Actually at one point there was also a third fronton in Hartford.
-There are some unique features to the way betting on jai alai is organized that makes it a bit
-tricky to analyze. Back then that seemed more interesting than working on my dissertaton. That period of my
-life is long past, but the lure of procrastination is still present. So on serveral occasions I have
-plunged back into jai alai. Jai alai was one of the first R projects I worked on after I retired. Recently
-I spent another month of my life on jai alai.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>&lt;!--- ![](https://www.gravatar.com/avatar/f7dd8b52bc092b4e50e9324381b02d67?s=200) ---&gt;
-
-&lt;p&gt;This website is intended to describe some of my personal R projects. It may include some posts on other general subjects.&lt;/p&gt;
-
-&lt;p&gt;This is my first attempt to use the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package
-to setup and maintain a website via &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/a&gt; and available
-via &lt;a href=&#34;https://pages.github.com/&#34;&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt;&lt;/a&gt;. This site uses the &lt;a href=&#34;http://themes.gohugo.io/hyde/&#34;&gt;Hyde theme&lt;/a&gt; in Hugo.&lt;/p&gt;
-
-&lt;p&gt;My first post describes &lt;a href=&#34;./2017/02/11/how-i-set-up-this-site/&#34;&gt;how I set up this site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Previously I did some &lt;a href=&#34;https://caniblogtoo.wordpress.com/&#34;&gt;posts on WordPress&lt;/a&gt; (which I have recreated in this blog) and before that
-I did some on &lt;a href=&#34;http://goldinoldie.blogspot.com/&#34;&gt;Blogger&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I am semi-retired. Until 2011 I was the Director of Institutional Research at Yale University. The &amp;ldquo;semi&amp;rdquo; part is that I still work for Yale about ten hours a week.&lt;/p&gt;
-
-&lt;p&gt;John Goldin                     gmail is john.r.goldin&lt;br /&gt;
-New Haven, Connecticut, USA&lt;/p&gt;
-</description>
+      <guid>/2017/02/17/portfolio/</guid>
+      <description>One motivation for creating this blog was to display a portfolio of projects that I have worked on in the last year or so. I&amp;rsquo;ll list projects here. The plan is that eventually I will add pages that elaborate each project. I hope that publishing my projects on this site will nudge me to be a bit more systematic as I execute projects.
+The Diary of Samuel Pepys Each morning I read an entry from The Diary of Samuel Pepys at a wonderful site created by Phil Gyford.</description>
     </item>
     
     <item>
@@ -647,215 +109,7 @@ New Haven, Connecticut, USA&lt;/p&gt;
       <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/02/11/how-i-set-up-this-site/</guid>
-      <description>
-
-&lt;p&gt;I attended the &lt;strong&gt;blogdown&lt;/strong&gt; session at the RStudio conference in Florida. I am enjoying the enthusiasm and energy around R and RStudio.
-It reminds me of the early days of personal computers at the end of the 70&amp;rsquo;s and the beginning of the 80&amp;rsquo;s. Perhaps I am experiencing a second
-childhood. Anyway, all the Cool Kids are doing web pages on GitHub so I want to do it too.&lt;/p&gt;
-
-&lt;p&gt;I have done some simple blog posts with Blogger and WordPress. One of my goals is to create a portfolio of the my R projects.
-RMarkdown is the obvious way to go and WordPress doesn&amp;rsquo;t directly support
-that. So that&amp;rsquo;s a motivation to use &lt;strong&gt;blogdown&lt;/strong&gt;. But a big  part of the
-motivation is that these days I am &amp;ldquo;all in&amp;rdquo; with the RStudio set of
-tools so it&amp;rsquo;s natural to put my faith in Yihui Xie and jump in. Because &lt;strong&gt;blogdown&lt;/strong&gt; is still developing,
-I know I am going to suffer through rough edges. As a retiree, I am
-doing this for fun so the rough edges just add to the adventure.&lt;/p&gt;
-
-&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;
-
-&lt;p&gt;I had a little trouble to start because I didn&amp;rsquo;t understand the basics of
-what was going on with GitHub and web pages. Here I am focused on what GitHub refers to as a &amp;ldquo;user site&amp;rdquo; (as opposed to an organization site or a project site). See their &lt;a href=&#34;https://pages.github.com/&#34;&gt;general description of GitHub Pages&lt;/a&gt; and &lt;a href=&#34;https://help.github.com/articles/what-is-github-pages&#34;&gt;What is GitHub Pages?&lt;/a&gt;. The key
-fact is that if you have a repository called &lt;code&gt;username.github.io&lt;/code&gt; (with your
-GitHub username), whatever is in that repository will be served
-as a web site accessed as &lt;code&gt;https://username.github.io&lt;/code&gt;. What
-we are going to do here is describe how to use &lt;strong&gt;markdown&lt;/strong&gt;, RStudio,
-and GitHub to place the content of a static web site into
-your &lt;code&gt;username.github.io&lt;/code&gt; repository.&lt;/p&gt;
-
-&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
-
-&lt;p&gt;The site relies on &lt;strong&gt;blogdown&lt;/strong&gt; and GitHub. You have to have at least a beginner&amp;rsquo;s familiarity with GitHub, and believe me, I am merely a
-GitHub beginner. I got my start with GitHub mostly based on information
-from Jenny Bryan (see &lt;a href=&#34;http://happygitwithr.com/&#34;&gt;Happy Git and GitHub for the useR&lt;/a&gt;) and from &lt;a href=&#34;https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN&#34;&gt;RStudio&lt;/a&gt;. There&amp;rsquo;s also an &lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34;&gt;introduction&lt;/a&gt; on the GitHub site.&lt;/p&gt;
-
-&lt;p&gt;You need to be able to create a repository on GitHub and then
-clone that to a project in RStudio. See especially &lt;a href=&#34;http://happygitwithr.com/new-github-first.html&#34;&gt;section 16&lt;/a&gt; on Happy Git.&lt;/p&gt;
-
-&lt;p&gt;In general I try to operate in a way that allows me to rely on RStudio to do most of the work and to avoid doing git commands in the Terminal on OSX.
-That&amp;rsquo;s why I create a minimal repository first on GitHub and then create
-a new project in RStudio that clones the repository from GitHub. Rely on
-Jenny&amp;rsquo;s directions on how to do that.&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-a-website&#34;&gt;Creating a website&lt;/h3&gt;
-
-&lt;p&gt;To get started with blogdown, I relied on a post by &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas&lt;/a&gt;,
-especially the comments on the post by Yihui Xie, the creator of
-&lt;strong&gt;blogdown&lt;/strong&gt;. Amber&amp;rsquo;s instructions involve more work with Git than I wanted
-to attempt. In particular, she uses multiple branches. Instead,
-I followed the suggestion in the comments by Yihui Xie and created two repositories.
-One was for the site itself (&lt;code&gt;johngoldin.github.io&lt;/code&gt;) and the other (which I called &lt;code&gt;pages-source&lt;/code&gt;) contains the &lt;strong&gt;blogdown&lt;/strong&gt; and &lt;strong&gt;Hugo&lt;/strong&gt; material
-that actually produces the site.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a repository for username.github.io on your github.&lt;/li&gt;
-&lt;li&gt;Clone that to a RStudio project with the same name.&lt;/li&gt;
-&lt;li&gt;Create a repository on your github, any name you desire, but here we will call it &lt;code&gt;hugo-source&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Clone that second project to an RStudio project.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;You are going to use &lt;strong&gt;blogdown&lt;/strong&gt; to create a &lt;strong&gt;Hugo&lt;/strong&gt; site created by files in the RStudio project
-&lt;code&gt;hugo-source&lt;/code&gt;. And you are going to configure that site
-so that whenever it builds a website, it will place that
-website into the RStudio project username.github.io.
-When you push username.github.io to GitHub you will in effect
-publish your website.&lt;/p&gt;
-
-&lt;p&gt;(It doesn&amp;rsquo;t matter whether or not you maintain
-a GitHub repository for &lt;code&gt;hugo-source&lt;/code&gt;. It depends on whether
-you want to use version control for convenience or backup, just
-as would be true for any other RStudio project.)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kevinfw.com/post/blogging-with-r-markdown/&#34;&gt;Kevin Wong&lt;/a&gt; does a nice
-job of describing the steps needed to get started with &lt;strong&gt;blogdown&lt;/strong&gt;. Too bad
-I didn&amp;rsquo;t discover this page until after I started writing this description. But I will follow his text closely here.&lt;/p&gt;
-
-&lt;p&gt;Here are the steps in the RStudio project that contains the source for Hugo. If you don&amp;rsquo;t already have &lt;code&gt;devtools&lt;/code&gt; installed as a pckage, use the Packages tab in RStudio to add that package.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(devtools)
-devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the RStudio project hugo-source (or whatever you have called it), have
-&lt;strong&gt;blogdown&lt;/strong&gt; install hugo.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(blogdown)
-blogdown::install_hugo()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next we wil have Hugo create a new site:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;blogdown::new_site()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The hugo-source site has to be &lt;strong&gt;totally&lt;/strong&gt; empty. Otherwise you will get an error. Of course as created it will not be totally empty.
-You will have an RProj file and probably &lt;code&gt;.gitignore&lt;/code&gt;.  Move those
-out of the project folder and keep them somewhere safe. Run
-&lt;code&gt;new_site&lt;/code&gt; again and them move them back into the project folder.&lt;/p&gt;
-
-&lt;p&gt;Next you need to install a &lt;strong&gt;Hugo&lt;/strong&gt; theme. Go to the &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;themes page&lt;/a&gt; to find one you like.
-It&amp;rsquo;s hard to know what to pick when you are just starting out.
-I&amp;rsquo;m a novice as well so I can&amp;rsquo;t offer good advice. You can
-avoid a choice for now and just stick with the default theme
-that is installed as part of the new_site() call.&lt;/p&gt;
-
-&lt;p&gt;If you have chosen a different theme, use the install_theme call:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install_theme(&amp;quot;spf13/hyde&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The above commands  will be needed only once when you first
-setup the project.&lt;/p&gt;
-
-&lt;p&gt;To try out your site,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;blogdown::serve_site()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With luck, the web site should appear in your RStudio View pane.&lt;/p&gt;
-
-&lt;p&gt;If you make changes in a post, they will automatically update
-in the site if it is running, You press the &lt;strong&gt;stop&lt;/strong&gt; button to halt the site. To restart it in the RStudio Viewer pane, you
-can again use &lt;code&gt;blogdown::serve_site()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;How to you get this site running in &lt;strong&gt;GitHub&lt;/strong&gt;? There&amp;rsquo;s a neat trick.
-Edit the &lt;code&gt;config.toml&lt;/code&gt; file in the &lt;code&gt;hugo-pages&lt;/code&gt; project folder and
-add this magic line:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;publishDir = &amp;quot;../username.github.io&amp;quot;   # where username is your GitHub name
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Whenever you run blogdown::serve_site(), the constructed site will be
-created in the &lt;code&gt;username.github.io&lt;/code&gt; directory rather than in &lt;code&gt;hugo-pages&lt;/code&gt;.
-To get the site working on &lt;strong&gt;GitHub&lt;/strong&gt;, switch to the &lt;code&gt;username.github.io&lt;/code&gt; project in RStudio,
-go to the Git pane in RStudio, select all the changed files, &lt;code&gt;Commit&lt;/code&gt;,
-and then &lt;code&gt;Push&lt;/code&gt; the changes to &lt;strong&gt;GitHub&lt;/strong&gt;. Magic! The same code
-that is creating the trial web site on your local computer will
-now be reproduced exactly in the &lt;code&gt;username.github.io&lt;/code&gt;
-repository on &lt;strong&gt;GitHub&lt;/strong&gt; and can be accessed as &lt;a href=&#34;http://username.github.io&#34;&gt;http://username.github.io&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can work on your web site on your local RStudio project. When you think it is ready to publish changes
-for all the world to see, go to the &lt;code&gt;username.github.io&lt;/code&gt; project and
-push the changes to &lt;strong&gt;GitHub&lt;/strong&gt; and you have published your changes on the web.&lt;/p&gt;
-
-&lt;p&gt;In summary, here are the steps to maintain the site:&lt;br /&gt;
-1. edit the site in the hugo-source project&lt;br /&gt;
-2. run blogdown::serve_site() to refresh the site&lt;br /&gt;
-3. switch to the username.github.io project on your local machine&lt;br /&gt;
-4. commit all changes&lt;br /&gt;
-5. push those changes to username.github.io on GitHub.&lt;/p&gt;
-
-&lt;h3 id=&#34;now-what&#34;&gt;Now What?&lt;/h3&gt;
-
-&lt;p&gt;I now have a working web site on &lt;strong&gt;GitHub&lt;/strong&gt;. But I have a ways to go to learn
-how to take advantage of &lt;strong&gt;Hugo&lt;/strong&gt; on an ongoing basis. So far I have added
-one and only one post. I have looked at the &lt;a href=&#34;http://gohugo.io/overview/usage/&#34;&gt;Hugo documentation&lt;/a&gt; a bit to try to figure out how to do some basis things.
-For example, &lt;a href=&#34;https://gohugo.io/extras/shortcodes#ref-relref&#34;&gt;this page&lt;/a&gt; tells
-me how to add a cross-reference to a post on my site.&lt;/p&gt;
-
-&lt;p&gt;It is not yet clear to me how I will take advantage of my &lt;strong&gt;Hugo&lt;/strong&gt; &lt;strong&gt;GitHub&lt;/strong&gt; site on an ongoing basis.
-One of the features of &lt;strong&gt;blogdown&lt;/strong&gt; is that I can use RMarkdown.
-How will I do that in practice?
-I&amp;rsquo;ll have an RMarkdown file in a project I am working on that
-documents or demonstrates that project. Will I &lt;code&gt;knit&lt;/code&gt; the file
-and then move the html to my &lt;strong&gt;blogdown&lt;/strong&gt; project? Will
-I move the Rmd file to the &lt;strong&gt;blogdown&lt;/strong&gt; project and include a &lt;code&gt;setwd&lt;/code&gt; function
-call to point to the project that it comes from? I haven&amp;rsquo;t
-tried any of this in practice yet. I need to look at the existing &lt;strong&gt;blogdown&lt;/strong&gt;
-examples more closely. When I know more, I&amp;rsquo;ll add to this introduction.&lt;/p&gt;
-
-&lt;p&gt;I have switched to the Hyde-x theme rather than just Hyde.
-Configuration has involved a lot of trial and error.
-I setup Disqus and briefly saw the ability to do comments on my blog. But after and I made some unrelated changes,
-I no longer saw any sign of Disqus.
-Eventually I realized that I was confused (and ignorant) about the
-syntax of &lt;code&gt;config.toml&lt;/code&gt;. I had had a square-brackets author line above
-the line that set &lt;code&gt;disqusShortname&lt;/code&gt; and as a result &lt;code&gt;disqusShortname&lt;/code&gt;
-wasn&amp;rsquo;t getting set. I moved things around and comments reappeared.&lt;/p&gt;
-
-&lt;p&gt;This is typical of the blundering around I am doing with Hugo and themes.
-I guess it&amp;rsquo;s a learning experience.&lt;/p&gt;
-
-&lt;h3 id=&#34;things-i-have-learned-since-i-first-posted-this&#34;&gt;Things I Have Learned Since I First Posted This&lt;/h3&gt;
-
-&lt;h4 id=&#34;directory-structure&#34;&gt;Directory Structure&lt;/h4&gt;
-
-&lt;p&gt;If you follow my steps exactly as described here or the instructions at the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;RStudio blogdown readme&lt;/a&gt;, you
-are likely to end up with a two-tiered directory structure. You create an
-RStudio project for your site (the top level) and then when you run &lt;code&gt;blogdown::new_site()&lt;/code&gt; you create a new directory within that project
-directory. That didn&amp;rsquo;t seem right to me, so behind the scenes I &amp;ldquo;fixed&amp;rdquo; that
-and flattened things so that my hugo site directory was the same as my RStudio project.
-Since then, I&amp;rsquo;ve decided there is probably some advantage in keeping
-the hugo site as a separate directory inside the project directory. It&amp;rsquo;s not
-a big deal, but having two levels gives you a place to put additional related
-material that is not directly related to your web site. As of now I have &amp;ldquo;flat&amp;rdquo; one-directory structure for my blogdown site. But if you
-follow the description in this post and end up with a two-level structure,
-keep it.&lt;/p&gt;
-
-&lt;h4 id=&#34;how-to-manage-an-rmarkdown-post&#34;&gt;How To Manage an RMarkdown Post&lt;/h4&gt;
-
-&lt;p&gt;I finally did my first RMarkdown post. As is likely to be the case,
-it is derived from a separate RStudio project. How should I deal with the
-working directory? The RMarkdown file is in my Hugo blogdown project. But
-the data file I need for my work is in the original project directory.
-At first I thought I should change the working directory with &lt;code&gt;setwd()&lt;/code&gt;,
-but I wondered about what side effects that might produce.
-A &lt;a href=&#34;http://stackoverflow.com/questions/20060518/in-rstudio-rmarkdown-how-to-setwd&#34;&gt;post on Stack Overflow&lt;/a&gt; steered me away from &lt;code&gt;setwd()&lt;/code&gt;.
-I now know I should use something like &lt;code&gt;knitr::opts_knit$set(root.dir = &#39;../myproject&#39;)&lt;/code&gt;. I have been having some trouble with that,
-presumably because of the &lt;code&gt;..&lt;/code&gt; notation to go up a directory, but
-I haven&amp;rsquo;t taken the time yet to case that out. Being impatient I cut
-corners and sort of hardcoded the file reference in my Rmd file. I&amp;rsquo;ll go back
-and fix that once I figure out the &lt;code&gt;root.dir&lt;/code&gt; parameter.&lt;/p&gt;
-</description>
+      <description>I attended the blogdown session at the RStudio conference in Florida. I am enjoying the enthusiasm and energy around R and RStudio. It reminds me of the early days of personal computers at the end of the 70&amp;rsquo;s and the beginning of the 80&amp;rsquo;s. Perhaps I am experiencing a second childhood. Anyway, all the Cool Kids are doing web pages on GitHub so I want to do it too.</description>
     </item>
     
     <item>
@@ -864,147 +118,17 @@ and fix that once I figure out the &lt;code&gt;root.dir&lt;/code&gt; parameter.&
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>/2016/07/03/using-the-flickr-api-from-r/</guid>
-      <description>&lt;p&gt;There used to be an &lt;a href=&#34;https://github.com/duncantl/Rflickr/blob/master/inst/doc/Rflickr.xml&#34;&gt;Rflickr package&lt;/a&gt;, but it no longer seems to work. It was last updated in 2011. I had a lot of trouble googling information on how to access Flickr from R. &lt;a href=&#34;http://timelyportfolio.github.io/rCharts_Rflickr/iso_httr.html&#34;&gt;This example&lt;/a&gt; really got me started. It is doing very different things that what I wanted to do, so it may be more useful than what I am laying out here, depending on your goal.&lt;/p&gt;
-
-&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;./img/Hadrians-Wall-screenshot.png&#34;, height=&#34;301&#34;, width=&#34;252&#34;&gt;To see where all this is leading, go to my Shiny app which displays &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;souvenirs of my walks&lt;/a&gt;. Click on a camera
-icon and you will see a thumbnail photo from Flickr in a popup. Click on the popup, and you will be taken to the full-sized photo in Flickr. To the right is a screenshot of the app showing a popup photo of Hadrian&amp;rsquo;s Wall. The GPS traces are in orange and red (for two different days).&lt;/p&gt;
-
-&lt;p&gt;Before you can get flickr data into R via their web API, you will need to &lt;a href=&#34;https://www.flickr.com/services/api/misc.api_keys.html&#34;&gt;sign up for a key&lt;/a&gt;. You will get a &lt;code&gt;user_id&lt;/code&gt; and an &lt;code&gt;api_key&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I save the &lt;code&gt;user_id&lt;/code&gt; and &lt;code&gt;api_key&lt;/code&gt; in a file that I load before executing the calls to the API. That way I am not showing the &lt;code&gt;api_key&lt;/code&gt; in my code. In the examples below, these are loaded from &lt;code&gt;flickr_values.RData&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The gateway to information about accessing Flickr data is via &lt;a href=&#34;https://www.flickr.com/services/api/&#34;&gt;The App Garden&lt;/a&gt; page at &lt;a href=&#34;https://www.flickr.com/&#34;&gt;Flickr&lt;/a&gt;. From that page you can go to the documentation for each call to the API. At the bottom of each documentation page there should be an API Explorer that takes you to a page that lets you try out the API call. See &lt;a href=&#34;https://www.flickr.com/services/api/explore/flickr.photosets.getList&#34;&gt;photosets.getList&lt;/a&gt; as an example. The API Explorer is a huge help and a great tool.&lt;/p&gt;
-
-&lt;p&gt;Here’s the code for an R function that will get a list of photosets (or albums):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(httr)
-library(jsonlite)
-
-load(file = &amp;quot;flickr_values.RData&amp;quot;) # to get user_id and api_key for Flickr calls
-
-# test: an_album &amp;lt;- flickr_photosets_getlist(api_key, user_id)
-flickr_photosets_getlist &amp;lt;- function(the_api_key = api_key, the_user_id = user_id) {
-  # flickr_photosets_getlist returns a data.frame with info on the albums.
-  xx &amp;lt;- GET(url=sprintf(
-    &amp;quot;https://api.flickr.com/services/rest/?method=flickr.photosets.getList&amp;amp;api_key=%s&amp;amp;user_id=%s&amp;amp;format=json&amp;amp;nojsoncallback=1&amp;quot;
-    , the_api_key
-    , the_user_id
-  )
-  ) %&amp;gt;% content(as = &amp;quot;text&amp;quot;) %&amp;gt;%
-    fromJSON()  # check that xy$stat == &amp;quot;ok&amp;quot;
-  if (xx$stat != &amp;quot;ok&amp;quot;) return(xx$stat)
-  albums &amp;lt;- xx$photosets[[5]]
-  return(albums)
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I get a message that says “No encoding supplied: defaulting to UTF-8.” Based on some googling, I think that’s from the GET call (from httr). I think this will disappear with a future version of httr.&lt;/p&gt;
-
-&lt;p&gt;Now that we have a data.frame that describes the albums, we can go on to get info about the photos in that album. (Remember that a photoset in the lingo of the API corresponds to an album in the terms used by the main Flickr site.)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#test:  xx &amp;lt;- flickr_photosets_getphotos(the_photoset_id = &amp;quot;72157657606414684&amp;quot;)
-flickr_photosets_getphotos &amp;lt;- function(the_photoset_id = NULL, 
-                                       time_start = NULL, 
-                                       time_end = NULL, 
-                                       the_api_key = api_key, 
-                                       the_user_id = user_id) {
-  # returns data.frame of photos including datetaken, latitude, longitude, 
-  # url_m, height_m, width_m and url_s, height_s, height_m
-  xx &amp;lt;- GET(url=sprintf(
-    &amp;quot;https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&amp;amp;api_key=%s&amp;amp;photoset_id=%s&amp;amp;user_id=%s&amp;amp;extras=%s&amp;amp;format=json&amp;amp;nojsoncallback=1&amp;quot;
-    , the_api_key
-    , the_photoset_id
-    , the_user_id
-    , &amp;quot;description,date_taken,geo,url_m,url_s&amp;quot;
-  )
-  ) %&amp;gt;% content(as = &amp;quot;text&amp;quot;) %&amp;gt;%
-    fromJSON()  # check that xx$stat == &amp;quot;ok&amp;quot;
-  if (xx$stat != &amp;quot;ok&amp;quot;) {
-    print(paste(&amp;quot;Flickr error&amp;quot;, code, message))
-    return(xx$stat)
-  }
-  # description gets returned as a data.frame. I&#39;m not sure why. so get _content
-  xx$description &amp;lt;- xx$description[ ,&amp;quot;_content&amp;quot;]
-  xx$photoset$photo$datetaken &amp;lt;- ymd_hms(xx$photoset$photo$datetaken)
-  xx$photoset$latitude &amp;lt;- as.numeric(xx$photoset$latitude)
-  xx$photoset$longitude &amp;lt;- as.numeric(xx$photoset$longitude)
-  xx$photoset$photo$latitude &amp;lt;- ifelse(xx$photoset$photo$latitude != 0, xx$photoset$photo$latitude, NA)
-  xx$photoset$photo$longitude &amp;lt;- ifelse(xx$photoset$photo$longitude != 0, xx$photoset$photo$longitude, NA)
-  if (is.null(time_start) &amp;amp; is.null(time_end)) return(xx$photoset$photo)
-  filter(xx$photoset$photo, is.null(time_start) | (datetaken &amp;gt;= time_start), is.null(time_end) | (datetaken &amp;gt;= time_end))
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What I wanted from Flickr was to be able to show a thumbnail version of a photo to add to a marker on a Leaflet map and then send the person to the photo at the Flickr site if the viewer clicked on the thumbnail.&lt;/p&gt;
-
-&lt;p&gt;The Flickr API constructs URL’s that fetch small or medium sized version of the photo.&lt;/p&gt;
-
-&lt;p&gt;Here is a facsimile of the code I used to add markers to the Leaflet map.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# produce a Flickr URL like the following:
-# https://www.flickr.com/photos/99418994@N00/22042568849/in/album-72157657606414684/
-photos_in_album_url &amp;lt;- function(album_id, photo_id, user_id) {
-  sprintf(&amp;quot;https://www.flickr.com/photos/%s/%s/in/album-%s/&amp;quot;,
-                 user_id,
-                 photo_id,
-                 album_id)
-}
-
-add_photos_to_map &amp;lt;- function(photos_df, a_map = null) {
-  if (is.null(a_map)) {
-    a_map &amp;lt;- leaflet(height = &amp;quot;700px&amp;quot;, width = NULL) %&amp;gt;%
-      addProviderTiles(&amp;quot;Thunderforest.Landscape&amp;quot;, group = &amp;quot;Topographical&amp;quot;) %&amp;gt;%
-      addProviderTiles(&amp;quot;Esri.WorldImagery&amp;quot;, group = &amp;quot;Satellite&amp;quot;) %&amp;gt;%
-      addProviderTiles(&amp;quot;OpenStreetMap.Mapnik&amp;quot;, group = &amp;quot;Road map&amp;quot;) 
-  }
-  photos_df &amp;lt;- filter(photos_df, !is.na(lng), !is.na(lat), include) # include == TRUE for the photos I want to add.
-
-  # photo_in_album is created by photos_in_album_url().  
-  # e.g., xx$trip_photos$photo_in_album &amp;lt;- map2_chr(xx$trip_photos$album_id, xx$trip_photos$id, photos_in_album_url, user_id) (using the purrr package that is part of the Hadleyverse)
-  a_map &amp;lt;- addMarkers(m, lng=photos_df$lng, lat= photos_df$lat,  
-                  popup = sprintf(&amp;quot;&amp;lt;a href=\&amp;quot;%s\ \&amp;quot; target=\&amp;quot;_blank\&amp;quot;&amp;gt;
-                                  &amp;lt;IMG SRC=\&amp;quot;%s\&amp;quot; ALT=\&amp;quot;%s\&amp;quot; WIDTH=%s HEIGHT=%s&amp;gt;%s &amp;lt;/a&amp;gt;&amp;quot;, 
-                                  photos_df$photo_in_album,
-                                  photos_df$url_s, 
-                                  &amp;quot;Click to go to photo in Flickr&amp;quot;,
-                                  photos_df$width_s,
-                                  photos_df$height_s,
-                                  photos_df$description),  
-                  icon = photoIcon, # function providing custom marker-icons
-                  group=&#39;Photo markers&#39;)
-  a_map
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I used these calls to add photo markers a Leaflet map showing souvenirs of my walking holidays.
-You can see the results &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>There used to be an Rflickr package, but it no longer seems to work. It was last updated in 2011. I had a lot of trouble googling information on how to access Flickr from R. This example really got me started. It is doing very different things that what I wanted to do, so it may be more useful than what I am laying out here, depending on your goal.</description>
     </item>
     
     <item>
       <title>Technical Note--Shiny Souvenir Map of Walks</title>
-      <link>/2016/06/28/technical-note--shiny-souvenir-map-of-walks/</link>
+      <link>/2016/06/28/walks_map_notes/</link>
       <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/06/28/technical-note--shiny-souvenir-map-of-walks/</guid>
-      <description>&lt;p&gt;I have used RStudio’s Shiny to create a &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&gt;map page&lt;/a&gt; where I can display GPS traces and photos from walks I have done during the last five years.&lt;/p&gt;
-
-&lt;p&gt;The map is based on an example provided by Maarten Hermans in  a &lt;a href=&#34;http://mhermans.net/hiking-gpx-r-leaflet.html&#34;&gt;blog post&lt;/a&gt; that he published last year. The map uses R htmlwidgets that provide access to the Javascript tool Leaflet. The trick is that I don’t have to know very much about either htmlwidgets or Leaflet to make this work.&lt;/p&gt;
-
-&lt;p&gt;Maarten relies on the package rgdal to deal with mapping issues. &lt;a href=&#34;http://www.gdal.org/&#34;&gt;GDAL – Geospatial Data Abstraction Library&lt;/a&gt; is a &lt;a href=&#34;http://www.osgeo.org/gdal_ogr&#34;&gt;big topic&lt;/a&gt;. I had used it previously to convert map coordinates from the projection used in Great Britain to WGS84, the projection used in the US, Google Earth, and Open Street Maps. Via Maarten’s example I learned that I could use an rgdal function (readOGR) to load in GPS tracks in the GPX format. With a bit of googling I picked up a couple of other useful tools. But I still have the barest understanding of what’s involved with GDAL (and the sp package that relies on rgdal). Back when I was first using rgdal I had some problems properly installing the gdal C libraries on OSX. It took a fair amount of googling to get that sorted out.&lt;/p&gt;
-
-&lt;p&gt;The example by Maarten displayed photos from his local server. I wanted to use photos that I had already uploaded to Flickr. There is an API to access Flickr, but at first I had a lot of trouble figuring out how to use it from R. There is an Rflickr package, but it appears to be out of date and no longer functions. Once again googling led me to an &lt;a href=&#34;http://timelyportfolio.github.io/rCharts_Rflickr/iso_httr.html&#34;&gt;example&lt;/a&gt; that unlocked the technique to use the Flickr API from R. As typically happens, this led me into a couple of other technical byways. I used the package &lt;a href=&#34;https://cran.r-project.org/web/packages/httr/index.html&#34;&gt;httr&lt;/a&gt; to interact with the Flickr API. Data is returned via JSON. I had heard of that before, but didn’t really understand its purpose. This led me into the package &lt;a href=&#34;https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html&#34;&gt;jsonlite&lt;/a&gt;. Once I got rolling with the Flickr API I realized that it was very effective and easy to use. Flickr sends me the URL for my pictures and I am able to put that URL into the popup markers that appear on the Leaflet map. The pre-sized photos are only downloaded from Flickr as needed so they popup very quickly.&lt;/p&gt;
-
-&lt;p&gt;My camera has a GPS and many of my photos are geo-tagged (depending on whether the camera had enough time to get a GPS fix). But for the camera icons on the GPS trace I did not rely on the GPS info from the camera. Instead I matched the time of the photo with the time of the points on the GPS trace. This works quite well. The GPS records time in universal (i.e. Greenwich) time while the camera generally records the time in the local time zone. I had to adjust for those time difference and sometimes adjust for the fact that in some cases I had the camera set on a wacky time zone.&lt;/p&gt;
-
-&lt;p&gt;As always my R code relies on the suite of packages created by &lt;a href=&#34;http://priceonomics.com/hadley-wickham-the-man-who-revolutionized-r/&#34;&gt;Hadley Wickham&lt;/a&gt;. I operate in the Hadleyverse. For this project httr was yet another &lt;a href=&#34;http://adolfoalvarez.cl/the-hitchhikers-guide-to-the-hadleyverse/&#34;&gt;hadleyverse&lt;/a&gt; package that turned out to do exactly what I needed to do even before I knew I needed it to cope with the Flickr API. (And as an update I will note that we are supposed to refer to the &lt;em&gt;tidyverse&lt;/em&gt; rather than the &lt;em&gt;hadleyverse&lt;/em&gt;.)&lt;/p&gt;
-
-&lt;p&gt;There are a number tools that put photos on a map with an effect similar to what is displayed here. Flickr has some views that emphasize photos located on maps. If you have a photo that is tagged with longitude and latitude Flickr will show a map view showing other photos in the same location. It is interesting to note that the Flickr map views also rely on the same &lt;a href=&#34;http://leafletjs.com/&#34;&gt;Leaflet technology&lt;/a&gt; used for this project. (Leaflet is more commonly used with languages other than R.)&lt;/p&gt;
-
-&lt;p&gt;I first did a &lt;a href=&#34;http://rpubs.com/JohnGoldin/149745&#34;&gt;version of the maps&lt;/a&gt; using RMarkdown to publish to the RStudio RPubs site. Fortunately this spring I decided to take the plunge and learn about Shiny. Shiny is a much more natural way to allow me to navigate among the map locations. This is my second Shiny app. (The first was a tool to allow regular expression &lt;a href=&#34;https://goldin.shinyapps.io/Search_Pepys/&#34;&gt;search of The Diary of Samuel Pepys&lt;/a&gt;.) Initially I had a version that worked great on my local machine, but failed when I tried to publish it to the shinyapps.io server. I posted a question to the Shiny Google group and got a helpful response from Joe Chang (the author of Shiny) in under a minute. In my initial version, I created a Leaflet map object and saved it to disk. The Shiny server would then load that object. But it turns out that the Leaflet map object depends on the local file structure so that when I copied that object to the Shiny server it no longer worked. I had to rearrange my code. First I had to assemble the geo-location info from GPS traces and the photo information from Flickr and save that as a data file that I could move to the Shiny server. On the Shiny server I create a Leaflet map and then use that data to add GPS traces and photo markers to the Leaflet map. It takes a noticeable amount of time each time the Shiny app starts up.&lt;/p&gt;
-
-&lt;p&gt;See this post for code examples on &lt;a href=&#34;./2016/07/03/using-the-flickr-api-from-r/&#34;&gt;how to access Flickr from R&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>/2016/06/28/walks_map_notes/</guid>
+      <description>I have used RStudio’s Shiny to create a map page where I can display GPS traces and photos from walks I have done during the last five years.
+The map is based on an example provided by Maarten Hermans in a blog post that he published last year. The map uses R htmlwidgets that provide access to the Javascript tool Leaflet. The trick is that I don’t have to know very much about either htmlwidgets or Leaflet to make this work.</description>
     </item>
     
     <item>
@@ -1013,18 +137,10 @@ You can see the results &lt;a href=&#34;https://goldin.shinyapps.io/Walks/&#34;&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/license/</guid>
-      <description>&lt;p&gt;The MIT License&lt;/p&gt;
-
-&lt;p&gt;SPDX short identifier: MIT&lt;/p&gt;
-
-&lt;p&gt;Copyright 2017 John Goldin&lt;/p&gt;
-
-&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
-
-&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&lt;/p&gt;
-
-&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
-</description>
+      <description>The MIT License
+SPDX short identifier: MIT
+Copyright 2018 John Goldin
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
     </item>
     
   </channel>

@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/2018/07/19/moved/</loc>
+    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/07/18/i-m-back/</loc>
+    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/07/07/site-notes/</loc>
+    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/03/15/american-walker-in-britain-part-3/</loc>
+    <lastmod>2017-03-15T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/2017/03/11/american-walker-in-britain-part-2/</loc>
@@ -17,13 +43,8 @@
   </url>
   
   <url>
-    <loc>/2017/02/17/portfolio-of-projects/</loc>
+    <loc>/2017/02/17/portfolio/</loc>
     <lastmod>2017-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2017-02-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -37,7 +58,7 @@
   </url>
   
   <url>
-    <loc>/2016/06/28/technical-note--shiny-souvenir-map-of-walks/</loc>
+    <loc>/2016/06/28/walks_map_notes/</loc>
     <lastmod>2016-06-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -46,37 +67,20 @@
   </url>
   
   <url>
-    <loc>/tags/blogdown/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/blogdown/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/british-walking/</loc>
-    <lastmod>2017-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2017-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/flickr/</loc>
-    <lastmod>2016-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,14 +91,14 @@
   </url>
   
   <url>
-    <loc>/tags/github/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/github/</loc>
-    <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,37 +115,20 @@
   </url>
   
   <url>
-    <loc>/tags/personal/</loc>
-    <lastmod>2017-02-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/personal/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2017-02-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+    <lastmod>2017-02-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
